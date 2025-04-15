@@ -4086,9 +4086,15 @@ int string edit_category 0x7f12005d
 int string edit_transaction 0x7f12005e
 int string end_date 0x7f12005f
 int string error_a11y_label 0x7f120060
+int string error_account_name_required 0x7f120139
 int string error_amount_required 0x7f120061
+int string error_category_name_required 0x7f12013a
+int string error_category_type_required 0x7f12013b
 int string error_fill_all_fields 0x7f120062
 int string error_icon_content_description 0x7f120063
+int string error_icon_required 0x7f12013c
+int string error_invalid_balance 0x7f12013d
+int string error_invalid_category_type 0x7f12013e
 int string error_required 0x7f120064
 int string expense 0x7f120065
 int string exposed_dropdown_menu_content_description 0x7f120066

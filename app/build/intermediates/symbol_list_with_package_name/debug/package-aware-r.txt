@@ -4087,9 +4087,15 @@ string edit_category
 string edit_transaction
 string end_date
 string error_a11y_label
+string error_account_name_required
 string error_amount_required
+string error_category_name_required
+string error_category_type_required
 string error_fill_all_fields
 string error_icon_content_description
+string error_icon_required
+string error_invalid_balance
+string error_invalid_category_type
 string error_required
 string expense
 string exposed_dropdown_menu_content_description

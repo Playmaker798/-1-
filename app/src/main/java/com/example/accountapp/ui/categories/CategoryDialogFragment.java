@@ -147,9 +147,27 @@ public class CategoryDialogFragment extends DialogFragment {
 
     private void saveCategory() {
         String name = binding.editTextName.getText().toString().trim();
-        TransactionEntity.Type type = TransactionEntity.Type.valueOf(binding.spinnerType.getText().toString());
+        String typeText = binding.spinnerType.getText().toString();
         String parentCategoryName = binding.spinnerParentCategory.getText().toString().trim();
         long parentId = 0;
+
+        if (name.isEmpty()) {
+            binding.editTextName.setError(getString(R.string.error_category_name_required));
+            return;
+        }
+
+        if (typeText.isEmpty()) {
+            binding.spinnerType.setError(getString(R.string.error_category_type_required));
+            return;
+        }
+
+        TransactionEntity.Type type;
+        try {
+            type = TransactionEntity.Type.valueOf(typeText);
+        } catch (IllegalArgumentException e) {
+            binding.spinnerType.setError(getString(R.string.error_invalid_category_type));
+            return;
+        }
 
         if (!parentCategoryName.isEmpty()) {
             for (Category parent : parentCategories) {
@@ -162,7 +180,8 @@ public class CategoryDialogFragment extends DialogFragment {
 
         int level = parentId == 0 ? 1 : 2;
 
-        if (name.isEmpty() || selectedIcon == null) {
+        if (selectedIcon == null) {
+            // 显示错误提示
             return;
         }
 

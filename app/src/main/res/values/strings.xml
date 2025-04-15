@@ -170,4 +170,12 @@
     <string name="select_default_options">Select Default Options</string>
     <string name="select_custom_options">Select Custom Options</string>
     <string name="select_other_options">Select Other Options</string>
+    
+    <!-- Error Messages -->
+    <string name="error_account_name_required">请输入账户名称</string>
+    <string name="error_invalid_balance">请输入有效的余额</string>
+    <string name="error_category_name_required">请输入分类名称</string>
+    <string name="error_category_type_required">请选择分类类型</string>
+    <string name="error_invalid_category_type">无效的分类类型</string>
+    <string name="error_icon_required">请选择图标</string>
 </resources> 

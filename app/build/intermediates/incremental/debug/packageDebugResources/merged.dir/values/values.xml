@@ -83,8 +83,14 @@
     <string name="edit_category">编辑分类</string>
     <string name="edit_transaction">编辑账目</string>
     <string name="end_date">结束日期</string>
+    <string name="error_account_name_required">请输入账户名称</string>
     <string name="error_amount_required">金额为必填项</string>
+    <string name="error_category_name_required">请输入分类名称</string>
+    <string name="error_category_type_required">请选择分类类型</string>
     <string name="error_fill_all_fields">请填写所有字段</string>
+    <string name="error_icon_required">请选择图标</string>
+    <string name="error_invalid_balance">请输入有效的余额</string>
+    <string name="error_invalid_category_type">无效的分类类型</string>
     <string name="error_required">此字段为必填项</string>
     <string name="expense">支出</string>
     <string name="icon">Icon</string>

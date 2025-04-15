@@ -84,8 +84,23 @@ public class AccountDialogFragment extends DialogFragment {
     private void saveAccount() {
         String name = binding.editTextName.getText().toString();
         AccountType type = (AccountType) binding.spinnerAccountType.getSelectedItem();
-        double balance = Double.parseDouble(binding.editTextBalance.getText().toString());
+        String balanceText = binding.editTextBalance.getText().toString();
         String note = binding.editTextNote.getText().toString();
+
+        if (name.isEmpty()) {
+            binding.editTextName.setError(getString(R.string.error_account_name_required));
+            return;
+        }
+
+        double balance = 0.0;
+        if (!balanceText.isEmpty()) {
+            try {
+                balance = Double.parseDouble(balanceText);
+            } catch (NumberFormatException e) {
+                binding.editTextBalance.setError(getString(R.string.error_invalid_balance));
+                return;
+            }
+        }
 
         if (account == null) {
             account = new Account(name, type, balance, note);
