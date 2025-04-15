@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_statistics.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_statistics.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.accountapp-main-55:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_dialog_category.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/dialog_category.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_investment.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_investment.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_add_transaction.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_add_transaction.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_dialog_budget.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/dialog_budget.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_transactions.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_transactions.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_transport.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_transport.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_categories.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_categories.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_account_balance.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_account_balance.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_transactions.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_transactions.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_bar_chart.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_bar_chart.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_car.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_car.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_categories.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_categories.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_statistics.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_statistics.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.accountapp-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_salary.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_salary.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.accountapp-main-55:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_wallet.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_wallet.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.accountapp-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_add.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_shopping.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_shopping.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_item_dropdown.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/item_dropdown.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_accounts.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_accounts.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_entertainment.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_entertainment.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_dialog_transaction.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/dialog_transaction.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_item_account.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/item_account.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/xml_backup_rules.xml.flat",
+        "source": "com.example.accountapp-main-55:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_item_transaction.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/item_transaction.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_health.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_health.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_item_category.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_activity_main.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_travel.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_travel.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_education.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_education.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_budgets.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_budgets.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_circle_background.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/circle_background.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_expense.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_expense.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_category.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_category.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_item_budget.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/item_budget.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_chevron_left.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_chevron_left.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_home.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_income.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_income.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_dialog_add_account.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/dialog_add_account.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_food.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_food.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/navigation_nav_graph.xml.flat",
+        "source": "com.example.accountapp-main-55:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_item_icon.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/item_icon.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_default.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_default.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_dialog_account.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/dialog_account.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_home.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.accountapp-main-55:/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_accounts.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_accounts.xml"
+    },
+    {
+        "merged": "com.example.accountapp-merged_res-53:/drawable_ic_gift.xml.flat",
+        "source": "com.example.accountapp-main-55:/drawable/ic_gift.xml"
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_accounts.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_accounts.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/dialog_transaction.xml",
+        "source": "com.example.accountapp-main-55:/layout/dialog_transaction.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_statistics.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_statistics.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/item_account.xml",
+        "source": "com.example.accountapp-main-55:/layout/item_account.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/item_dropdown.xml",
+        "source": "com.example.accountapp-main-55:/layout/item_dropdown.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/dialog_add_account.xml",
+        "source": "com.example.accountapp-main-55:/layout/dialog_add_account.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/item_budget.xml",
+        "source": "com.example.accountapp-main-55:/layout/item_budget.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_transactions.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_transactions.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/activity_main.xml",
+        "source": "com.example.accountapp-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/dialog_account.xml",
+        "source": "com.example.accountapp-main-55:/layout/dialog_account.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_home.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/item_category.xml",
+        "source": "com.example.accountapp-main-55:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/dialog_budget.xml",
+        "source": "com.example.accountapp-main-55:/layout/dialog_budget.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/item_transaction.xml",
+        "source": "com.example.accountapp-main-55:/layout/item_transaction.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_categories.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_categories.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_add_transaction.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_add_transaction.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/item_icon.xml",
+        "source": "com.example.accountapp-main-55:/layout/item_icon.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_budgets.xml",
+        "source": "com.example.accountapp-main-55:/layout/fragment_budgets.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/dialog_category.xml",
+        "source": "com.example.accountapp-main-55:/layout/dialog_category.xml"
+    }
+]
