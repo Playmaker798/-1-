@@ -20,10 +20,6 @@ public class CategoryRepository {
         executorService = Executors.newSingleThreadExecutor();
     }
 
-    public LiveData<List<Category>> getCategoriesByType(TransactionEntity.Type type) {
-        return categoryDao.getCategoriesByType(type);
-    }
-
     public LiveData<List<Category>> getCategoriesByLevel(int level) {
         return categoryDao.getCategoriesByLevel(level);
     }

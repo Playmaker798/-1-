@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
@@ -17,6 +18,8 @@ import com.example.accountapp.data.entity.TransactionEntity;
 import com.example.accountapp.databinding.DialogTransactionBinding;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class TransactionDialogFragment extends DialogFragment {
     private DialogTransactionBinding binding;
@@ -70,23 +73,63 @@ public class TransactionDialogFragment extends DialogFragment {
 
     private void observeData() {
         viewModel.getAccounts().observe(getViewLifecycleOwner(), accounts -> {
-            ArrayAdapter<Account> adapter = new ArrayAdapter<>(
+            ArrayAdapter<Account> adapter = new ArrayAdapter<Account>(
                 requireContext(),
-                android.R.layout.simple_spinner_item,
+                android.R.layout.simple_dropdown_item_1line,
                 accounts
-            );
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            ) {
+                @NonNull
+                @Override
+                public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                    View view = super.getView(position, convertView, parent);
+                    TextView textView = (TextView) view;
+                    textView.setText(getItem(position).getName());
+                    return view;
+                }
+            };
+            adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
             binding.spinnerAccount.setAdapter(adapter);
         });
 
         viewModel.getCategories().observe(getViewLifecycleOwner(), categories -> {
-            ArrayAdapter<Category> adapter = new ArrayAdapter<>(
+            ArrayAdapter<Category> adapter = new ArrayAdapter<Category>(
                 requireContext(),
-                android.R.layout.simple_spinner_item,
+                android.R.layout.simple_dropdown_item_1line,
                 categories
-            );
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            ) {
+                @NonNull
+                @Override
+                public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                    View view = super.getView(position, convertView, parent);
+                    TextView textView = (TextView) view;
+                    textView.setText(getItem(position).getName());
+                    return view;
+                }
+            };
+            adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
             binding.spinnerCategory.setAdapter(adapter);
+        });
+
+        // Update categories when type changes
+        binding.spinnerType.setOnItemClickListener((parent, view, position, id) -> {
+            viewModel.getCategories().observe(getViewLifecycleOwner(), categories -> {
+                ArrayAdapter<Category> adapter = new ArrayAdapter<Category>(
+                    requireContext(),
+                    android.R.layout.simple_dropdown_item_1line,
+                    categories
+                ) {
+                    @NonNull
+                    @Override
+                    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                        View view = super.getView(position, convertView, parent);
+                        TextView textView = (TextView) view;
+                        textView.setText(getItem(position).getName());
+                        return view;
+                    }
+                };
+                adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                binding.spinnerCategory.setAdapter(adapter);
+            });
         });
     }
 

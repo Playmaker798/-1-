@@ -8,7 +8,7 @@ import com.example.accountapp.data.repository.AccountRepository;
 import java.util.List;
 
 public class AccountsViewModel extends AndroidViewModel {
-    private final AccountRepository repository;
+    protected AccountRepository repository;
 
     public AccountsViewModel(Application application) {
         super(application);

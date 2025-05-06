@@ -2,22 +2,37 @@ package com.example.accountapp.ui.accounts;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.accountapp.R;
 import com.example.accountapp.data.entity.Account;
-import com.example.accountapp.data.entity.AccountType;
-import com.example.accountapp.databinding.DialogAccountBinding;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.textfield.TextInputEditText;
+import java.util.Arrays;
 
 public class AccountDialogFragment extends DialogFragment {
-    private DialogAccountBinding binding;
-    private AccountsViewModel viewModel;
+    private TextInputEditText nameInput;
+    private Spinner typeSpinner;
+    private TextInputEditText balanceInput;
+    private TextInputEditText noteInput;
+    private Button saveButton;
+    private Button cancelButton;
     private Account account;
+    private OnAccountSaveListener listener;
+    private AccountsViewModel viewModel;
     private long accountId = -1;
+
+    public interface OnAccountSaveListener {
+        void onAccountSave(Account account);
+    }
 
     public static AccountDialogFragment newInstance() {
         return new AccountDialogFragment();
@@ -31,6 +46,10 @@ public class AccountDialogFragment extends DialogFragment {
         return fragment;
     }
 
+    public void setOnAccountSaveListener(OnAccountSaveListener listener) {
+        this.listener = listener;
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +59,13 @@ public class AccountDialogFragment extends DialogFragment {
         }
     }
 
-    @NonNull
+    @Nullable
     @Override
-    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        binding = DialogAccountBinding.inflate(getLayoutInflater());
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.dialog_account, container, false);
+        initViews(view);
+        setupSpinner();
+        setupButtons();
         
         if (accountId != -1) {
             viewModel.getAccount(accountId).observe(this, account -> {
@@ -53,54 +75,49 @@ public class AccountDialogFragment extends DialogFragment {
                 }
             });
         }
-
-        setupViews();
-        return new MaterialAlertDialogBuilder(requireContext())
-                .setView(binding.getRoot())
-                .create();
+        
+        return view;
     }
 
-    private void setupViews() {
-        ArrayAdapter<AccountType> adapter = new ArrayAdapter<>(
-                requireContext(),
-                android.R.layout.simple_spinner_item,
-                AccountType.values());
+    private void initViews(View view) {
+        nameInput = view.findViewById(R.id.account_name_input);
+        typeSpinner = view.findViewById(R.id.account_type_spinner);
+        balanceInput = view.findViewById(R.id.account_balance_input);
+        noteInput = view.findViewById(R.id.account_note_input);
+        saveButton = view.findViewById(R.id.save_button);
+        cancelButton = view.findViewById(R.id.cancel_button);
+    }
+
+    private void setupSpinner() {
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+            requireContext(),
+            android.R.layout.simple_spinner_item,
+            Arrays.stream(Account.AccountType.values())
+                  .map(Account.AccountType::getDisplayName)
+                  .toArray(String[]::new)
+        );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        binding.spinnerAccountType.setAdapter(adapter);
-
-        binding.buttonSave.setOnClickListener(v -> saveAccount());
-        binding.buttonCancel.setOnClickListener(v -> dismiss());
+        typeSpinner.setAdapter(adapter);
     }
 
-    private void populateFields() {
-        if (account != null) {
-            binding.editTextName.setText(account.getName());
-            binding.spinnerAccountType.setSelection(account.getType().ordinal());
-            binding.editTextBalance.setText(String.valueOf(account.getBalance()));
-            binding.editTextNote.setText(account.getNote());
-        }
+    private void setupButtons() {
+        saveButton.setOnClickListener(v -> saveAccount());
+        cancelButton.setOnClickListener(v -> dismiss());
     }
 
     private void saveAccount() {
-        String name = binding.editTextName.getText().toString();
-        AccountType type = (AccountType) binding.spinnerAccountType.getSelectedItem();
-        String balanceText = binding.editTextBalance.getText().toString();
-        String note = binding.editTextNote.getText().toString();
+        String name = nameInput.getText().toString().trim();
+        int typeIndex = typeSpinner.getSelectedItemPosition();
+        Account.AccountType type = Account.AccountType.values()[typeIndex];
+        String balanceStr = balanceInput.getText().toString().trim();
+        String note = noteInput.getText().toString().trim();
 
-        if (name.isEmpty()) {
-            binding.editTextName.setError(getString(R.string.error_account_name_required));
+        if (name.isEmpty() || balanceStr.isEmpty()) {
+            // 显示错误提示
             return;
         }
 
-        double balance = 0.0;
-        if (!balanceText.isEmpty()) {
-            try {
-                balance = Double.parseDouble(balanceText);
-            } catch (NumberFormatException e) {
-                binding.editTextBalance.setError(getString(R.string.error_invalid_balance));
-                return;
-            }
-        }
+        double balance = Double.parseDouble(balanceStr);
 
         if (account == null) {
             account = new Account(name, type, balance, note);
@@ -112,12 +129,31 @@ public class AccountDialogFragment extends DialogFragment {
             account.setNote(note);
             viewModel.update(account);
         }
+
+        if (listener != null) {
+            listener.onAccountSave(account);
+        }
         dismiss();
+    }
+
+    private void populateFields() {
+        if (account != null) {
+            nameInput.setText(account.getName());
+            typeSpinner.setSelection(account.getType().ordinal());
+            balanceInput.setText(String.valueOf(account.getBalance()));
+            noteInput.setText(account.getNote());
+        }
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+        nameInput = null;
+        typeSpinner = null;
+        balanceInput = null;
+        noteInput = null;
+        saveButton = null;
+        cancelButton = null;
+        account = null;
     }
 } 

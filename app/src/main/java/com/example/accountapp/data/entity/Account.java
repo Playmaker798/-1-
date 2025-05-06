@@ -13,6 +13,28 @@ public class Account {
     private double balance;
     private String note;
 
+    public enum AccountType {
+        CASH,    // 现金
+        BANK,    // 银行卡
+        CREDIT,  // 信用卡
+        ALIPAY,  // 支付宝
+        WECHAT,  // 微信
+        OTHER;   // 其他
+
+        public String getDisplayName() {
+            switch (this) {
+                case CASH: return "现金";
+                case BANK: return "储蓄卡";
+                case CREDIT: return "信用卡";
+                case ALIPAY: return "支付宝";
+                case WECHAT: return "微信";
+                case OTHER: return "其他";
+                default: return this.name();
+            }
+        }
+    }
+
+    // 无参构造函数
     public Account() {
     }
 

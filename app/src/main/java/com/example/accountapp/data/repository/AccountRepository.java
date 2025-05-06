@@ -10,11 +10,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class AccountRepository {
-    private final AccountDao accountDao;
+    protected AccountDao accountDao;
+    protected AppDatabase db;
     private final ExecutorService executorService;
 
     public AccountRepository(Application application) {
-        AppDatabase db = AppDatabase.getInstance(application);
+        db = AppDatabase.getInstance(application);
         accountDao = db.accountDao();
         executorService = Executors.newSingleThreadExecutor();
     }

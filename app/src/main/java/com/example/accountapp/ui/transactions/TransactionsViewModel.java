@@ -46,10 +46,6 @@ public class TransactionsViewModel extends AndroidViewModel {
         return categoryRepository.getCategories();
     }
 
-    public LiveData<List<Category>> getCategoriesByType(TransactionEntity.Type type) {
-        return categoryRepository.getCategoriesByType(type);
-    }
-
     public LiveData<List<TransactionEntity>> getTransactionsByAccount(long accountId) {
         return transactionRepository.getTransactionsByAccount(accountId);
     }

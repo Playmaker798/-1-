@@ -12,9 +12,6 @@ import java.util.List;
 
 @Dao
 public interface CategoryDao {
-    @Query("SELECT * FROM categories WHERE type = :type ORDER BY name")
-    LiveData<List<Category>> getCategoriesByType(TransactionEntity.Type type);
-
     @Query("SELECT * FROM categories WHERE level = :level ORDER BY name")
     LiveData<List<Category>> getCategoriesByLevel(int level);
 

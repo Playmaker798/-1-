@@ -19,7 +19,9 @@ import com.example.accountapp.data.entity.TransactionEntity;
 import com.example.accountapp.databinding.DialogCategoryBinding;
 import com.google.android.material.textfield.TextInputEditText;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class CategoryDialogFragment extends DialogFragment {
     private DialogCategoryBinding binding;
@@ -83,16 +85,7 @@ public class CategoryDialogFragment extends DialogFragment {
 
     private void setupViews() {
         TextInputEditText editName = binding.editTextName;
-        AutoCompleteTextView spinnerType = binding.spinnerType;
         AutoCompleteTextView spinnerParentCategory = binding.spinnerParentCategory;
-
-        // Setup type spinner
-        ArrayAdapter<TransactionEntity.Type> typeAdapter = new ArrayAdapter<>(
-            requireContext(),
-            android.R.layout.simple_dropdown_item_1line,
-            TransactionEntity.Type.values()
-        );
-        spinnerType.setAdapter(typeAdapter);
 
         // Setup parent category spinner
         ArrayAdapter<Category> parentCategoryAdapter = new ArrayAdapter<>(
@@ -101,6 +94,8 @@ public class CategoryDialogFragment extends DialogFragment {
             parentCategories
         );
         spinnerParentCategory.setAdapter(parentCategoryAdapter);
+        spinnerParentCategory.setThreshold(0); // 显示所有选项
+        spinnerParentCategory.setOnClickListener(v -> spinnerParentCategory.showDropDown());
 
         binding.buttonSave.setOnClickListener(v -> saveCategory());
         binding.buttonCancel.setOnClickListener(v -> dismiss());
@@ -132,7 +127,6 @@ public class CategoryDialogFragment extends DialogFragment {
 
     private void populateFields(Category category) {
         binding.editTextName.setText(category.getName());
-        binding.spinnerType.setText(category.getType().toString(), false);
         if (category.getParentId() != 0) {
             for (Category parent : parentCategories) {
                 if (parent.getId() == category.getParentId()) {
@@ -147,25 +141,11 @@ public class CategoryDialogFragment extends DialogFragment {
 
     private void saveCategory() {
         String name = binding.editTextName.getText().toString().trim();
-        String typeText = binding.spinnerType.getText().toString();
         String parentCategoryName = binding.spinnerParentCategory.getText().toString().trim();
         long parentId = 0;
 
         if (name.isEmpty()) {
             binding.editTextName.setError(getString(R.string.error_category_name_required));
-            return;
-        }
-
-        if (typeText.isEmpty()) {
-            binding.spinnerType.setError(getString(R.string.error_category_type_required));
-            return;
-        }
-
-        TransactionEntity.Type type;
-        try {
-            type = TransactionEntity.Type.valueOf(typeText);
-        } catch (IllegalArgumentException e) {
-            binding.spinnerType.setError(getString(R.string.error_invalid_category_type));
             return;
         }
 
@@ -185,7 +165,7 @@ public class CategoryDialogFragment extends DialogFragment {
             return;
         }
 
-        Category category = new Category(name, type, selectedIcon, "#FF0000", parentId, level);
+        Category category = new Category(name, selectedIcon, "#FF0000", parentId, level);
         if (categoryId != -1) {
             category.setId(categoryId);
             viewModel.updateCategory(category);

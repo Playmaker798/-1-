@@ -41,7 +41,6 @@ public class CategoryAdapter extends ListAdapter<Category, CategoryAdapter.Categ
 
         void bind(Category category) {
             binding.textViewCategoryName.setText(category.getName());
-            binding.textViewCategoryType.setText(category.getType().name());
             // TODO: Set icon and color
 
             binding.getRoot().setOnClickListener(v -> listener.onCategoryClick(category));
@@ -61,9 +60,8 @@ public class CategoryAdapter extends ListAdapter<Category, CategoryAdapter.Categ
         @Override
         public boolean areContentsTheSame(@NonNull Category oldItem, @NonNull Category newItem) {
             return oldItem.getName().equals(newItem.getName()) &&
-                   oldItem.getType() == newItem.getType() &&
                    oldItem.getIcon().equals(newItem.getIcon()) &&
-                   oldItem.getColor() == newItem.getColor();
+                   oldItem.getColor().equals(newItem.getColor());
         }
     }
 

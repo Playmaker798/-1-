@@ -71,7 +71,7 @@ public class AccountsAdapter extends ListAdapter<Account, AccountsAdapter.Accoun
 
         void bind(Account account) {
             textViewName.setText(account.getName());
-            textViewType.setText(account.getType().toString());
+            textViewType.setText(account.getType().getDisplayName());
             textViewBalance.setText(String.format("$%.2f", account.getBalance()));
 
             cardView.setOnClickListener(v -> listener.onAccountClick(account));

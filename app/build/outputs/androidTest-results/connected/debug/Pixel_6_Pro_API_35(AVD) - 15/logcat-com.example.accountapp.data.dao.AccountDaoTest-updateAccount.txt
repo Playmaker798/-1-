@@ -1,0 +1,2 @@
+05-06 13:57:44.105 31854 31868 I TestRunner: started: updateAccount(com.example.accountapp.data.dao.AccountDaoTest)
+05-06 13:57:44.124 31854 31868 I TestRunner: finished: updateAccount(com.example.accountapp.data.dao.AccountDaoTest)

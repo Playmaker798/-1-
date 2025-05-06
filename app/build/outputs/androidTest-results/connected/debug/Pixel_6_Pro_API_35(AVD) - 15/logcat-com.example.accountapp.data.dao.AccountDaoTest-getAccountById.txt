@@ -1,0 +1,2 @@
+05-06 13:57:44.081 31854 31868 I TestRunner: started: getAccountById(com.example.accountapp.data.dao.AccountDaoTest)
+05-06 13:57:44.099 31854 31868 I TestRunner: finished: getAccountById(com.example.accountapp.data.dao.AccountDaoTest)

@@ -1,0 +1,579 @@
+# 2025-05-06T13:57:52.302Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 11
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "AccountDaoTest"
+    test_package: "com.example.accountapp.data.dao"
+    test_method: "deleteAccount"
+    start_time {
+      seconds: 1746539870
+      nanos: 151000000
+    }
+    end_time {
+      seconds: 1746539870
+      nanos: 279000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.dao.AccountDaoTest-deleteAccount.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountDaoTest"
+    test_package: "com.example.accountapp.data.dao"
+    test_method: "insertAndGetAccount"
+    start_time {
+      seconds: 1746539870
+      nanos: 295000000
+    }
+    end_time {
+      seconds: 1746539870
+      nanos: 299000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.dao.AccountDaoTest-insertAndGetAccount.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountDaoTest"
+    test_package: "com.example.accountapp.data.dao"
+    test_method: "getAccountById"
+    start_time {
+      seconds: 1746539870
+      nanos: 301000000
+    }
+    end_time {
+      seconds: 1746539870
+      nanos: 306000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountDaoTest"
+    test_package: "com.example.accountapp.data.dao"
+    test_method: "updateAccount"
+    start_time {
+      seconds: 1746539870
+      nanos: 308000000
+    }
+    end_time {
+      seconds: 1746539870
+      nanos: 338000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.dao.AccountDaoTest-updateAccount.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountRepositoryTest"
+    test_package: "com.example.accountapp.data.repository"
+    test_method: "getAccount_returnsAccount"
+    start_time {
+      seconds: 1746539870
+      nanos: 340000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 311000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-getAccount_returnsAccount.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountRepositoryTest"
+    test_package: "com.example.accountapp.data.repository"
+    test_method: "getAllAccounts_returnsAllAccounts"
+    start_time {
+      seconds: 1746539871
+      nanos: 313000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 316000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-getAllAccounts_returnsAllAccounts.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountRepositoryTest"
+    test_package: "com.example.accountapp.data.repository"
+    test_method: "update_callsDaoUpdate"
+    start_time {
+      seconds: 1746539871
+      nanos: 345000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 348000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-update_callsDaoUpdate.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountRepositoryTest"
+    test_package: "com.example.accountapp.data.repository"
+    test_method: "insert_callsDaoInsert"
+    start_time {
+      seconds: 1746539871
+      nanos: 351000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 382000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-insert_callsDaoInsert.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountRepositoryTest"
+    test_package: "com.example.accountapp.data.repository"
+    test_method: "delete_callsDaoDelete"
+    start_time {
+      seconds: 1746539871
+      nanos: 383000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 388000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-delete_callsDaoDelete.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountsViewModelTest"
+    test_package: "com.example.accountapp.ui.accounts"
+    test_method: "getAccount_returnsCorrectAccount"
+    start_time {
+      seconds: 1746539871
+      nanos: 389000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 622000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.ui.accounts.AccountsViewModelTest-getAccount_returnsCorrectAccount.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AccountsViewModelTest"
+    test_package: "com.example.accountapp.ui.accounts"
+    test_method: "getAllAccounts_returnsAllAccounts"
+    start_time {
+      seconds: 1746539871
+      nanos: 624000000
+    }
+    end_time {
+      seconds: 1746539871
+      nanos: 627000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.ui.accounts.AccountsViewModelTest-getAllAccounts_returnsAllAccounts.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

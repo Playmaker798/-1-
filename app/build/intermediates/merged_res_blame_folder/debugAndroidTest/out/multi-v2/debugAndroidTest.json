@@ -1,34 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.accountapp.test.app-merged_res-6:/values-v28_values-v28.arsc.flat",
+            "outputFile": "com.example.accountapp.test.app-merged_res-11:/values-v18_values-v18.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\7ea7ee71b1140ec012bcd329349fcd49\\transformed\\jetified-core-1.5.0\\res\\values-v28\\values.xml",
-                    "from": {
-                        "startLines": "4,13",
-                        "startColumns": "0,0",
-                        "startOffsets": "180,659",
-                        "endLines": "12,21",
-                        "endColumns": "8,8",
-                        "endOffsets": "658,1135"
-                    },
-                    "to": {
-                        "startLines": "2,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,538",
-                        "endLines": "10,19",
-                        "endColumns": "8,8",
-                        "endOffsets": "533,1014"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "com.example.accountapp.test.app-merged_res-6:/values-v18_values-v18.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\7ea7ee71b1140ec012bcd329349fcd49\\transformed\\jetified-core-1.5.0\\res\\values-v18\\values.xml",
+                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\3649339ec8819952cf65b19c42c2fb44\\transformed\\jetified-core-1.5.0\\res\\values-v18\\values.xml",
                     "from": {
                         "startLines": "4,12",
                         "startColumns": "0,0",
@@ -49,10 +25,34 @@
             ]
         },
         {
-            "outputFile": "com.example.accountapp.test.app-merged_res-6:/values_values.arsc.flat",
+            "outputFile": "com.example.accountapp.test.app-merged_res-11:/values-v28_values-v28.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\7ea7ee71b1140ec012bcd329349fcd49\\transformed\\jetified-core-1.5.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\3649339ec8819952cf65b19c42c2fb44\\transformed\\jetified-core-1.5.0\\res\\values-v28\\values.xml",
+                    "from": {
+                        "startLines": "4,13",
+                        "startColumns": "0,0",
+                        "startOffsets": "180,659",
+                        "endLines": "12,21",
+                        "endColumns": "8,8",
+                        "endOffsets": "658,1135"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,538",
+                        "endLines": "10,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "533,1014"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.accountapp.test.app-merged_res-11:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\3649339ec8819952cf65b19c42c2fb44\\transformed\\jetified-core-1.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",
@@ -73,10 +73,10 @@
             ]
         },
         {
-            "outputFile": "com.example.accountapp.test.app-merged_res-6:/values-v21_values-v21.arsc.flat",
+            "outputFile": "com.example.accountapp.test.app-merged_res-11:/values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\7ea7ee71b1140ec012bcd329349fcd49\\transformed\\jetified-core-1.5.0\\res\\values-v21\\values.xml",
+                    "source": "C:\\Users\\31609\\.gradle\\caches\\transforms-3\\3649339ec8819952cf65b19c42c2fb44\\transformed\\jetified-core-1.5.0\\res\\values-v21\\values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",

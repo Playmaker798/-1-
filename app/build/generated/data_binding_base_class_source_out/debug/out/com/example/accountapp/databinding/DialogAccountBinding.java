@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import androidx.annotation.NonNull;
@@ -13,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.accountapp.R;
+import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,33 +22,34 @@ public final class DialogAccountBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button buttonCancel;
+  public final TextInputEditText accountBalanceInput;
 
   @NonNull
-  public final Button buttonSave;
+  public final TextInputEditText accountNameInput;
 
   @NonNull
-  public final EditText editTextBalance;
+  public final TextInputEditText accountNoteInput;
 
   @NonNull
-  public final EditText editTextName;
+  public final Spinner accountTypeSpinner;
 
   @NonNull
-  public final EditText editTextNote;
+  public final Button cancelButton;
 
   @NonNull
-  public final Spinner spinnerAccountType;
+  public final Button saveButton;
 
-  private DialogAccountBinding(@NonNull LinearLayout rootView, @NonNull Button buttonCancel,
-      @NonNull Button buttonSave, @NonNull EditText editTextBalance, @NonNull EditText editTextName,
-      @NonNull EditText editTextNote, @NonNull Spinner spinnerAccountType) {
+  private DialogAccountBinding(@NonNull LinearLayout rootView,
+      @NonNull TextInputEditText accountBalanceInput, @NonNull TextInputEditText accountNameInput,
+      @NonNull TextInputEditText accountNoteInput, @NonNull Spinner accountTypeSpinner,
+      @NonNull Button cancelButton, @NonNull Button saveButton) {
     this.rootView = rootView;
-    this.buttonCancel = buttonCancel;
-    this.buttonSave = buttonSave;
-    this.editTextBalance = editTextBalance;
-    this.editTextName = editTextName;
-    this.editTextNote = editTextNote;
-    this.spinnerAccountType = spinnerAccountType;
+    this.accountBalanceInput = accountBalanceInput;
+    this.accountNameInput = accountNameInput;
+    this.accountNoteInput = accountNoteInput;
+    this.accountTypeSpinner = accountTypeSpinner;
+    this.cancelButton = cancelButton;
+    this.saveButton = saveButton;
   }
 
   @Override
@@ -78,44 +79,44 @@ public final class DialogAccountBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonCancel;
-      Button buttonCancel = ViewBindings.findChildViewById(rootView, id);
-      if (buttonCancel == null) {
+      id = R.id.account_balance_input;
+      TextInputEditText accountBalanceInput = ViewBindings.findChildViewById(rootView, id);
+      if (accountBalanceInput == null) {
         break missingId;
       }
 
-      id = R.id.buttonSave;
-      Button buttonSave = ViewBindings.findChildViewById(rootView, id);
-      if (buttonSave == null) {
+      id = R.id.account_name_input;
+      TextInputEditText accountNameInput = ViewBindings.findChildViewById(rootView, id);
+      if (accountNameInput == null) {
         break missingId;
       }
 
-      id = R.id.editTextBalance;
-      EditText editTextBalance = ViewBindings.findChildViewById(rootView, id);
-      if (editTextBalance == null) {
+      id = R.id.account_note_input;
+      TextInputEditText accountNoteInput = ViewBindings.findChildViewById(rootView, id);
+      if (accountNoteInput == null) {
         break missingId;
       }
 
-      id = R.id.editTextName;
-      EditText editTextName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextName == null) {
+      id = R.id.account_type_spinner;
+      Spinner accountTypeSpinner = ViewBindings.findChildViewById(rootView, id);
+      if (accountTypeSpinner == null) {
         break missingId;
       }
 
-      id = R.id.editTextNote;
-      EditText editTextNote = ViewBindings.findChildViewById(rootView, id);
-      if (editTextNote == null) {
+      id = R.id.cancel_button;
+      Button cancelButton = ViewBindings.findChildViewById(rootView, id);
+      if (cancelButton == null) {
         break missingId;
       }
 
-      id = R.id.spinnerAccountType;
-      Spinner spinnerAccountType = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerAccountType == null) {
+      id = R.id.save_button;
+      Button saveButton = ViewBindings.findChildViewById(rootView, id);
+      if (saveButton == null) {
         break missingId;
       }
 
-      return new DialogAccountBinding((LinearLayout) rootView, buttonCancel, buttonSave,
-          editTextBalance, editTextName, editTextNote, spinnerAccountType);
+      return new DialogAccountBinding((LinearLayout) rootView, accountBalanceInput,
+          accountNameInput, accountNoteInput, accountTypeSpinner, cancelButton, saveButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

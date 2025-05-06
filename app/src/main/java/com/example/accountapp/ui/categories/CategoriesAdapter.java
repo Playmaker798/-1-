@@ -31,7 +31,6 @@ public class CategoriesAdapter extends ListAdapter<Category, CategoriesAdapter.C
             @Override
             public boolean areContentsTheSame(@NonNull Category oldItem, @NonNull Category newItem) {
                 return oldItem.getName().equals(newItem.getName()) &&
-                       oldItem.getType() == newItem.getType() &&
                        oldItem.getIcon().equals(newItem.getIcon()) &&
                        oldItem.getColor().equals(newItem.getColor());
             }
@@ -56,14 +55,12 @@ public class CategoriesAdapter extends ListAdapter<Category, CategoriesAdapter.C
         private final MaterialCardView cardView;
         private final ImageView imageViewIcon;
         private final TextView textViewName;
-        private final TextView textViewType;
 
         CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
             cardView = (MaterialCardView) itemView;
             imageViewIcon = itemView.findViewById(R.id.imageViewCategoryIcon);
             textViewName = itemView.findViewById(R.id.textViewCategoryName);
-            textViewType = itemView.findViewById(R.id.textViewCategoryType);
 
             itemView.setOnClickListener(v -> {
                 int position = getAdapterPosition();
@@ -87,7 +84,6 @@ public class CategoriesAdapter extends ListAdapter<Category, CategoriesAdapter.C
             // For now, use a default icon
             imageViewIcon.setImageResource(R.drawable.ic_category);
             textViewName.setText(category.getName());
-            textViewType.setText(category.getType().toString());
             cardView.setCardBackgroundColor(android.graphics.Color.parseColor(category.getColor()));
         }
     }

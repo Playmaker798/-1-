@@ -37,20 +37,16 @@ public final class DialogCategoryBinding implements ViewBinding {
   @NonNull
   public final AutoCompleteTextView spinnerParentCategory;
 
-  @NonNull
-  public final AutoCompleteTextView spinnerType;
-
   private DialogCategoryBinding(@NonNull LinearLayout rootView, @NonNull Button buttonCancel,
       @NonNull Button buttonSave, @NonNull TextInputEditText editTextName,
-      @NonNull RecyclerView recyclerViewIcons, @NonNull AutoCompleteTextView spinnerParentCategory,
-      @NonNull AutoCompleteTextView spinnerType) {
+      @NonNull RecyclerView recyclerViewIcons,
+      @NonNull AutoCompleteTextView spinnerParentCategory) {
     this.rootView = rootView;
     this.buttonCancel = buttonCancel;
     this.buttonSave = buttonSave;
     this.editTextName = editTextName;
     this.recyclerViewIcons = recyclerViewIcons;
     this.spinnerParentCategory = spinnerParentCategory;
-    this.spinnerType = spinnerType;
   }
 
   @Override
@@ -110,14 +106,8 @@ public final class DialogCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.spinnerType;
-      AutoCompleteTextView spinnerType = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerType == null) {
-        break missingId;
-      }
-
       return new DialogCategoryBinding((LinearLayout) rootView, buttonCancel, buttonSave,
-          editTextName, recyclerViewIcons, spinnerParentCategory, spinnerType);
+          editTextName, recyclerViewIcons, spinnerParentCategory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

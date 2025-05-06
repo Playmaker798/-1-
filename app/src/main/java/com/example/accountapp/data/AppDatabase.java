@@ -22,7 +22,7 @@ import com.example.accountapp.data.entity.TransactionEntity;
         TransactionEntity.class,
         Budget.class
     },
-    version = 3,
+    version = 5,
     exportSchema = false)
 @TypeConverters({Converters.class})
 public abstract class AppDatabase extends RoomDatabase {
@@ -34,43 +34,51 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract TransactionDao transactionDao();
     public abstract BudgetDao budgetDao();
 
-    private static final Migration MIGRATION_1_2 = new Migration(1, 2) {
+    private static final Migration MIGRATION_4_5 = new Migration(4, 5) {
         @Override
         public void migrate(SupportSQLiteDatabase database) {
-            // 创建临时表
-            database.execSQL("CREATE TABLE IF NOT EXISTS categories_new (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
-                    "name TEXT NOT NULL, " +
-                    "type TEXT NOT NULL, " +
-                    "icon TEXT NOT NULL, " +
-                    "parentId INTEGER NOT NULL DEFAULT 0, " +
-                    "level INTEGER NOT NULL DEFAULT 1)");
-
-            // 将旧数据复制到新表
-            database.execSQL("INSERT INTO categories_new (id, name, type, icon, parentId, level) " +
-                    "SELECT id, name, type, icon, 0, 1 FROM categories");
-
-            // 删除旧表
-            database.execSQL("DROP TABLE categories");
-
-            // 重命名新表
-            database.execSQL("ALTER TABLE categories_new RENAME TO categories");
-        }
-    };
-
-    private static final Migration MIGRATION_2_3 = new Migration(2, 3) {
-        @Override
-        public void migrate(SupportSQLiteDatabase database) {
-            // Drop and recreate the categories table with all required columns
+            // Drop all tables and recreate them
             database.execSQL("DROP TABLE IF EXISTS categories");
+            database.execSQL("DROP TABLE IF EXISTS transactions");
+            database.execSQL("DROP TABLE IF EXISTS accounts");
+            database.execSQL("DROP TABLE IF EXISTS budgets");
+
+            // Recreate categories table
             database.execSQL("CREATE TABLE IF NOT EXISTS categories (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
                     "name TEXT NOT NULL, " +
-                    "type TEXT NOT NULL, " +
                     "icon TEXT NOT NULL, " +
                     "color TEXT NOT NULL, " +
                     "parentId INTEGER NOT NULL DEFAULT 0, " +
                     "level INTEGER NOT NULL DEFAULT 1)");
+
+            // Recreate other tables
+            database.execSQL("CREATE TABLE IF NOT EXISTS accounts (" +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                    "name TEXT NOT NULL, " +
+                    "type TEXT NOT NULL, " +
+                    "balance REAL NOT NULL DEFAULT 0, " +
+                    "note TEXT)");
+
+            database.execSQL("CREATE TABLE IF NOT EXISTS transactions (" +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                    "accountId INTEGER NOT NULL, " +
+                    "categoryId INTEGER NOT NULL, " +
+                    "amount REAL NOT NULL, " +
+                    "description TEXT, " +
+                    "note TEXT, " +
+                    "date INTEGER NOT NULL, " +
+                    "type TEXT NOT NULL, " +
+                    "FOREIGN KEY(accountId) REFERENCES accounts(id), " +
+                    "FOREIGN KEY(categoryId) REFERENCES categories(id))");
+
+            database.execSQL("CREATE TABLE IF NOT EXISTS budgets (" +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                    "categoryId INTEGER NOT NULL, " +
+                    "amount REAL NOT NULL, " +
+                    "month INTEGER NOT NULL, " +
+                    "year INTEGER NOT NULL, " +
+                    "FOREIGN KEY(categoryId) REFERENCES categories(id))");
         }
     };
 
@@ -80,7 +88,7 @@ public abstract class AppDatabase extends RoomDatabase {
                     context.getApplicationContext(),
                     AppDatabase.class,
                     DATABASE_NAME)
-                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
+                    .addMigrations(MIGRATION_4_5)
                     .fallbackToDestructiveMigration()
                     .build();
         }

@@ -1,0 +1,2 @@
+05-06 13:57:45.142 31854 31868 I TestRunner: started: insert_callsDaoInsert(com.example.accountapp.data.repository.AccountRepositoryTest)
+05-06 13:57:45.152 31854 31868 I TestRunner: finished: insert_callsDaoInsert(com.example.accountapp.data.repository.AccountRepositoryTest)

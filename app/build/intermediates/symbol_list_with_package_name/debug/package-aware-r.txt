@@ -3228,6 +3228,10 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id account_balance_input
+id account_name_input
+id account_note_input
+id account_type_spinner
 id actionDown
 id actionDownUp
 id actionUp
@@ -3364,7 +3368,6 @@ id edge
 id editAmount
 id editName
 id editTextAmount
-id editTextBalance
 id editTextDate
 id editTextDescription
 id editTextName
@@ -3607,6 +3610,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id save_button
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3650,7 +3654,6 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinnerAccount
-id spinnerAccountType
 id spinnerCategory
 id spinnerParentCategory
 id spinnerType
@@ -3705,7 +3708,6 @@ id textViewAmount
 id textViewBalance
 id textViewCategory
 id textViewCategoryName
-id textViewCategoryType
 id textViewDate
 id textViewDescription
 id textViewEmpty

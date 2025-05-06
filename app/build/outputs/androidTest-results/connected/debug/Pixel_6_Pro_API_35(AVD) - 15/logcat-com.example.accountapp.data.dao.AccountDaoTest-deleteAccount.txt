@@ -1,0 +1,2 @@
+05-06 13:57:43.933 31854 31868 I TestRunner: started: deleteAccount(com.example.accountapp.data.dao.AccountDaoTest)
+05-06 13:57:44.056 31854 31868 I TestRunner: finished: deleteAccount(com.example.accountapp.data.dao.AccountDaoTest)

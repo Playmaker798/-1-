@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 import com.example.accountapp.data.Converters;
-import com.example.accountapp.data.entity.TransactionEntity;
+import java.util.Objects;
 
 @Entity(tableName = "categories")
 @TypeConverters(Converters.class)
@@ -12,15 +12,13 @@ public class Category {
     @PrimaryKey(autoGenerate = true)
     private long id;
     private String name;
-    private TransactionEntity.Type type;
     private String icon;
     private String color;
     private long parentId; // 父分类ID，0表示一级分类
     private int level; // 分类级别：1表示一级分类，2表示二级分类
 
-    public Category(String name, TransactionEntity.Type type, String icon, String color, long parentId, int level) {
+    public Category(String name, String icon, String color, long parentId, int level) {
         this.name = name;
-        this.type = type;
         this.icon = icon;
         this.color = color;
         this.parentId = parentId;
@@ -41,14 +39,6 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public TransactionEntity.Type getType() {
-        return type;
-    }
-
-    public void setType(TransactionEntity.Type type) {
-        this.type = type;
     }
 
     public String getIcon() {
@@ -90,7 +80,6 @@ public class Category {
         Category category = (Category) o;
         return id == category.id &&
             name.equals(category.name) &&
-            type == category.type &&
             icon.equals(category.icon) &&
             color.equals(category.color) &&
             parentId == category.parentId &&
@@ -99,6 +88,6 @@ public class Category {
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(id, name, type, icon, color, parentId, level);
+        return Objects.hash(id, name, icon, color, parentId, level);
     }
 } 

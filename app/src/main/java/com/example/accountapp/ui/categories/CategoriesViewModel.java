@@ -20,10 +20,6 @@ public class CategoriesViewModel extends AndroidViewModel {
         parentCategories = categoryRepository.getCategoriesByLevel(1);
     }
 
-    public LiveData<List<Category>> getCategoriesByType(TransactionEntity.Type type) {
-        return categoryRepository.getCategoriesByType(type);
-    }
-
     public LiveData<List<Category>> getParentCategories() {
         return parentCategories;
     }

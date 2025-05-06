@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.accountapp.data.dao.AccountDaoTest" tests="11" failures="0" errors="0" skipped="0" time="2.108" timestamp="2025-05-06T13:57:52" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6_Pro_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="deleteAccount" classname="com.example.accountapp.data.dao.AccountDaoTest" time="0.121" />
+  <testcase name="insertAndGetAccount" classname="com.example.accountapp.data.dao.AccountDaoTest" time="0.004" />
+  <testcase name="getAccountById" classname="com.example.accountapp.data.dao.AccountDaoTest" time="0.004" />
+  <testcase name="updateAccount" classname="com.example.accountapp.data.dao.AccountDaoTest" time="0.03" />
+  <testcase name="getAccount_returnsAccount" classname="com.example.accountapp.data.repository.AccountRepositoryTest" time="0.97" />
+  <testcase name="getAllAccounts_returnsAllAccounts" classname="com.example.accountapp.data.repository.AccountRepositoryTest" time="0.004" />
+  <testcase name="update_callsDaoUpdate" classname="com.example.accountapp.data.repository.AccountRepositoryTest" time="0.003" />
+  <testcase name="insert_callsDaoInsert" classname="com.example.accountapp.data.repository.AccountRepositoryTest" time="0.03" />
+  <testcase name="delete_callsDaoDelete" classname="com.example.accountapp.data.repository.AccountRepositoryTest" time="0.003" />
+  <testcase name="getAccount_returnsCorrectAccount" classname="com.example.accountapp.ui.accounts.AccountsViewModelTest" time="0.231" />
+  <testcase name="getAllAccounts_returnsAllAccounts" classname="com.example.accountapp.ui.accounts.AccountsViewModelTest" time="0.003" />
+</testsuite>

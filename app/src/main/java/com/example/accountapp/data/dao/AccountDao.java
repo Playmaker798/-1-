@@ -11,7 +11,7 @@ import java.util.List;
 
 @Dao
 public interface AccountDao {
-    @Query("SELECT * FROM accounts ORDER BY name")
+    @Query("SELECT * FROM accounts")
     LiveData<List<Account>> getAllAccounts();
 
     @Query("SELECT * FROM accounts WHERE id = :id")

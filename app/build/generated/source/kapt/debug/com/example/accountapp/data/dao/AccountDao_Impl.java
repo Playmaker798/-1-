@@ -12,11 +12,10 @@ import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
-import com.example.accountapp.data.Converters;
 import com.example.accountapp.data.entity.Account;
-import com.example.accountapp.data.entity.AccountType;
 import java.lang.Class;
 import java.lang.Exception;
+import java.lang.IllegalArgumentException;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
@@ -54,11 +53,10 @@ public final class AccountDao_Impl implements AccountDao {
         } else {
           statement.bindString(2, entity.getName());
         }
-        final String _tmp = Converters.accountTypeToString(entity.getType());
-        if (_tmp == null) {
+        if (entity.getType() == null) {
           statement.bindNull(3);
         } else {
-          statement.bindString(3, _tmp);
+          statement.bindString(3, __AccountType_enumToString(entity.getType()));
         }
         statement.bindDouble(4, entity.getBalance());
         if (entity.getNote() == null) {
@@ -95,11 +93,10 @@ public final class AccountDao_Impl implements AccountDao {
         } else {
           statement.bindString(2, entity.getName());
         }
-        final String _tmp = Converters.accountTypeToString(entity.getType());
-        if (_tmp == null) {
+        if (entity.getType() == null) {
           statement.bindNull(3);
         } else {
-          statement.bindString(3, _tmp);
+          statement.bindString(3, __AccountType_enumToString(entity.getType()));
         }
         statement.bindDouble(4, entity.getBalance());
         if (entity.getNote() == null) {
@@ -179,7 +176,7 @@ public final class AccountDao_Impl implements AccountDao {
 
   @Override
   public LiveData<List<Account>> getAllAccounts() {
-    final String _sql = "SELECT * FROM accounts ORDER BY name";
+    final String _sql = "SELECT * FROM accounts";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return __db.getInvalidationTracker().createLiveData(new String[] {"accounts"}, false, new Callable<List<Account>>() {
       @Override
@@ -206,14 +203,12 @@ public final class AccountDao_Impl implements AccountDao {
               _tmpName = _cursor.getString(_cursorIndexOfName);
             }
             _item.setName(_tmpName);
-            final AccountType _tmpType;
-            final String _tmp;
+            final Account.AccountType _tmpType;
             if (_cursor.isNull(_cursorIndexOfType)) {
-              _tmp = null;
+              _tmpType = null;
             } else {
-              _tmp = _cursor.getString(_cursorIndexOfType);
+              _tmpType = __AccountType_stringToEnum(_cursor.getString(_cursorIndexOfType));
             }
-            _tmpType = Converters.fromAccountType(_tmp);
             _item.setType(_tmpType);
             final double _tmpBalance;
             _tmpBalance = _cursor.getDouble(_cursorIndexOfBalance);
@@ -270,14 +265,12 @@ public final class AccountDao_Impl implements AccountDao {
               _tmpName = _cursor.getString(_cursorIndexOfName);
             }
             _result.setName(_tmpName);
-            final AccountType _tmpType;
-            final String _tmp;
+            final Account.AccountType _tmpType;
             if (_cursor.isNull(_cursorIndexOfType)) {
-              _tmp = null;
+              _tmpType = null;
             } else {
-              _tmp = _cursor.getString(_cursorIndexOfType);
+              _tmpType = __AccountType_stringToEnum(_cursor.getString(_cursorIndexOfType));
             }
-            _tmpType = Converters.fromAccountType(_tmp);
             _result.setType(_tmpType);
             final double _tmpBalance;
             _tmpBalance = _cursor.getDouble(_cursorIndexOfBalance);
@@ -308,5 +301,29 @@ public final class AccountDao_Impl implements AccountDao {
   @NonNull
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
+  }
+
+  private String __AccountType_enumToString(@NonNull final Account.AccountType _value) {
+    switch (_value) {
+      case CASH: return "CASH";
+      case BANK: return "BANK";
+      case CREDIT: return "CREDIT";
+      case ALIPAY: return "ALIPAY";
+      case WECHAT: return "WECHAT";
+      case OTHER: return "OTHER";
+      default: throw new IllegalArgumentException("Can't convert enum to string, unknown enum value: " + _value);
+    }
+  }
+
+  private Account.AccountType __AccountType_stringToEnum(@NonNull final String _value) {
+    switch (_value) {
+      case "CASH": return Account.AccountType.CASH;
+      case "BANK": return Account.AccountType.BANK;
+      case "CREDIT": return Account.AccountType.CREDIT;
+      case "ALIPAY": return Account.AccountType.ALIPAY;
+      case "WECHAT": return Account.AccountType.WECHAT;
+      case "OTHER": return Account.AccountType.OTHER;
+      default: throw new IllegalArgumentException("Can't convert value to enum, unknown value: " + _value);
+    }
   }
 }
