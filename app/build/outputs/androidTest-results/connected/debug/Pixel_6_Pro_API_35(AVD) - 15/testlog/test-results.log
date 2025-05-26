@@ -1,23 +1,35 @@
-INSTRUMENTATION_STATUS: class=com.example.accountapp.MainActivityTest
+INSTRUMENTATION_STATUS: class=com.example.accountapp.MainActivityTest2
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.accountapp.MainActivityTest:
-INSTRUMENTATION_STATUS: test=mainActivityTest
+com.example.accountapp.MainActivityTest2:
+INSTRUMENTATION_STATUS: test=mainActivityTest2
 INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.accountapp.MainActivityTest
+INSTRUMENTATION_STATUS: class=com.example.accountapp.MainActivityTest2
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
-INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=mainActivityTest
-INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: 保存失败，未能关闭对话框，请检查错误提示内容。
+at com.example.accountapp.MainActivityTest2.mainActivityTest2(MainActivityTest2.java:197)
+
+INSTRUMENTATION_STATUS: stream=
+Error in mainActivityTest2(com.example.accountapp.MainActivityTest2):
+java.lang.AssertionError: 保存失败，未能关闭对话框，请检查错误提示内容。
+at com.example.accountapp.MainActivityTest2.mainActivityTest2(MainActivityTest2.java:197)
+
+INSTRUMENTATION_STATUS: test=mainActivityTest2
+INSTRUMENTATION_STATUS_CODE: -2
 INSTRUMENTATION_RESULT: stream=
 
-Time: 9.17
+Time: 13.457
+There was 1 failure:
+1) mainActivityTest2(com.example.accountapp.MainActivityTest2)
+java.lang.AssertionError: 保存失败，未能关闭对话框，请检查错误提示内容。
+at com.example.accountapp.MainActivityTest2.mainActivityTest2(MainActivityTest2.java:197)
 
-OK (1 test)
+FAILURES!!!
+Tests run: 1,  Failures: 1
 
 
 INSTRUMENTATION_CODE: -1

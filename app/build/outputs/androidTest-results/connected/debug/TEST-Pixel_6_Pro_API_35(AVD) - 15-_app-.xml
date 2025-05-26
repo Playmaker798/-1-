@@ -1,9 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.accountapp.MainActivityTest" tests="1" failures="0" errors="0" skipped="0" time="10.161" timestamp="2025-05-26T02:32:14" hostname="localhost">
+<testsuite name="com.example.accountapp.MainActivityTest2" tests="1" failures="1" errors="0" skipped="0" time="14.147" timestamp="2025-05-26T07:30:54" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_6_Pro_API_35(AVD) - 15" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="mainActivityTest" classname="com.example.accountapp.MainActivityTest" time="9.045" />
+  <testcase name="mainActivityTest2" classname="com.example.accountapp.MainActivityTest2" time="13.443">
+    <failure>java.lang.AssertionError: 保存失败，未能关闭对话框，请检查错误提示内容。
+at com.example.accountapp.MainActivityTest2.mainActivityTest2(MainActivityTest2.java:197)</failure>
+  </testcase>
 </testsuite>

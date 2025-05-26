@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="abc_switch_padding">0px</dimen>
     <style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
 <item name="android:windowNoTitle">true</item>
 <item name="android:windowFullscreen">false</item>

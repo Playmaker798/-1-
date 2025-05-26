@@ -47,7 +47,8 @@ dependencies {
     // Navigation
     implementation 'androidx.navigation:navigation-fragment-ktx:2.7.7'
     implementation 'androidx.navigation:navigation-ui-ktx:2.7.7'
-    
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.7.0-alpha03'
+
     // Room
     def room_version = "2.6.1"
     implementation "androidx.room:room-runtime:$room_version"
