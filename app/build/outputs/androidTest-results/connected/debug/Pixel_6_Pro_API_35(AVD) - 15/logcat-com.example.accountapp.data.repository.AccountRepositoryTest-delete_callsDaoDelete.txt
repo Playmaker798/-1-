@@ -1,2 +1,0 @@
-05-06 13:57:45.156 31854 31868 I TestRunner: started: delete_callsDaoDelete(com.example.accountapp.data.repository.AccountRepositoryTest)
-05-06 13:57:45.164 31854 31868 I TestRunner: finished: delete_callsDaoDelete(com.example.accountapp.data.repository.AccountRepositoryTest)

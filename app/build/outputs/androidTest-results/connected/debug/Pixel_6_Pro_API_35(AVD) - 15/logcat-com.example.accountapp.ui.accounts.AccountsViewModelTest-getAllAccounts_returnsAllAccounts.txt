@@ -1,2 +1,0 @@
-05-06 13:57:45.412 31854 31868 I TestRunner: started: getAllAccounts_returnsAllAccounts(com.example.accountapp.ui.accounts.AccountsViewModelTest)
-05-06 13:57:45.417 31854 31868 I TestRunner: finished: getAllAccounts_returnsAllAccounts(com.example.accountapp.ui.accounts.AccountsViewModelTest)

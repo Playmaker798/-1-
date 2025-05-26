@@ -92,13 +92,13 @@ dependencies {
     testImplementation 'androidx.arch.core:core-testing:2.1.0'
     
     // Android tests
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0-alpha03'
     androidTestImplementation 'androidx.test:runner:1.4.0'
-    androidTestImplementation 'androidx.test:rules:1.4.0'
+    androidTestImplementation 'androidx.test:rules:1.7.0-alpha03'
     androidTestImplementation 'androidx.room:room-testing:2.3.0'
     androidTestImplementation 'androidx.test:core:1.4.0'
     androidTestImplementation 'androidx.test:core-ktx:1.4.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0-alpha03'
     
     // Mockito dependencies
     androidTestImplementation 'org.mockito:mockito-core:5.7.0'
@@ -107,6 +107,6 @@ dependencies {
     // AndroidX Test dependencies
     androidTestImplementation 'androidx.arch.core:core-testing:2.2.0'
     androidTestImplementation 'androidx.test:runner:1.5.2'
-    androidTestImplementation 'androidx.test:rules:1.5.0'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:rules:1.7.0-alpha03'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0-alpha03'
 } 

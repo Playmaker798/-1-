@@ -1,2 +1,0 @@
-05-06 13:57:45.117 31854 31868 I TestRunner: started: update_callsDaoUpdate(com.example.accountapp.data.repository.AccountRepositoryTest)
-05-06 13:57:45.135 31854 31868 I TestRunner: finished: update_callsDaoUpdate(com.example.accountapp.data.repository.AccountRepositoryTest)

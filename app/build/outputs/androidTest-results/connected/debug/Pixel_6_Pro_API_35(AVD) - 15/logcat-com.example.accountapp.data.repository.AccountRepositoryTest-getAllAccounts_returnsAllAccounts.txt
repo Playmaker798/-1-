@@ -1,2 +1,0 @@
-05-06 13:57:45.097 31854 31868 I TestRunner: started: getAllAccounts_returnsAllAccounts(com.example.accountapp.data.repository.AccountRepositoryTest)
-05-06 13:57:45.111 31854 31868 I TestRunner: finished: getAllAccounts_returnsAllAccounts(com.example.accountapp.data.repository.AccountRepositoryTest)

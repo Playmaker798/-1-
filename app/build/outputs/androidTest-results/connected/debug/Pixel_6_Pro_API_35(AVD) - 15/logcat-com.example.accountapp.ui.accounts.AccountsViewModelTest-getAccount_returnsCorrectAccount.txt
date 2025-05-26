@@ -1,4 +1,0 @@
-05-06 13:57:45.170 31854 31868 I TestRunner: started: getAccount_returnsCorrectAccount(com.example.accountapp.ui.accounts.AccountsViewModelTest)
-05-06 13:57:45.294 31854 31868 W ziparchive: Unable to open '/data/user/0/com.example.accountapp/cache/fYybwzcY.dm': No such file or directory
-05-06 13:57:45.403 31854 31868 W ziparchive: Unable to open '/data/user/0/com.example.accountapp/cache/BzW8ww4i.dm': No such file or directory
-05-06 13:57:45.409 31854 31868 I TestRunner: finished: getAccount_returnsCorrectAccount(com.example.accountapp.ui.accounts.AccountsViewModelTest)

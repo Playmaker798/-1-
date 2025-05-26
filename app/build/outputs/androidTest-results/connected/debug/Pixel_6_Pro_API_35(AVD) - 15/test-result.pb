@@ -1,147 +1,219 @@
 
-¡
-[
-AccountDaoTestcom.example.accountapp.data.daodeleteAccount2ﬁ™Ë¿¿ßÄH:ﬁ™Ë¿¿ÁÑÖ"‹
+ˆÛ
+X
+MainActivityTestcom.example.accountappmainActivityTest2ë†œ¡ÄΩûÇ:ò†œ¡ÄÔ‘¢∏Ì
+¿∂androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: view.getId() is <2131296524/com.example.accountapp:id/layout_account_name>
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:androidx.appcompat.widget.AppCompatSpinner{c026481 VFED..CL. ........ 56,279-728,363 #7f090033 app:id/account_type_spinner aid=1073741825}
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=896, height=1201, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(wrapxwrap) gr=CENTER sim={adjust=pan} ty=APPLICATION fmt=TRANSLUCENT wanim=0x103030a
+fl=DIM_BEHIND SPLIT_TOUCH HARDWARE_ACCELERATED
+bhv=DEFAULT
+fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR
+frameRateBoostOnTouch=true
+dvrrWindowFrameRateHint=true}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++->FrameLayout{id=-1, visibility=VISIBLE, width=784, height=1089, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=56.0, child-count=2}
+|
++-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=784, height=1089, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++--->LinearLayout{id=-1, visibility=VISIBLE, width=784, height=1089, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}
+|
++---->TextInputLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=56.0, child-count=1}
+|
++----->FrameLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------>TextInputEditText{id=2131296305, res-name=account_name_input, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Ë¥¶Êà∑ÂêçÁß∞ label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Ë¥¶Êà∑ÂêçÁß∞, input-type=1, ime-target=false, has-links=false}
+|
++------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------->CheckableImageButton{id=2131296801, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->AppCompatTextView{id=2131296806, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------->AppCompatTextView{id=2131296807, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-------->CheckableImageButton{id=2131296799, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->CheckableImageButton{id=2131296800, res-name=text_input_error_icon, desc=ÈîôËØØ, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++---->AppCompatSpinner{id=2131296307, res-name=account_type_spinner, visibility=VISIBLE, width=672, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=279.0, child-count=1}
+|
++----->MaterialTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=504, height=82, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1.0, text=Áé∞Èáë, input-type=0, ime-target=false, has-links=false}
+|
++---->TextInputLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=391.0, child-count=1}
+|
++----->FrameLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------>TextInputEditText{id=2131296304, res-name=account_balance_input, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2002 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x2000 hintText=‰ΩôÈ¢ù label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true contentMimeTypes=null ], x=0.0, y=0.0, text=100, hint=‰ΩôÈ¢ù, input-type=8194, ime-target=false, has-links=false}
+|
++------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------->CheckableImageButton{id=2131296801, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->AppCompatTextView{id=2131296806, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------->AppCompatTextView{id=2131296807, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-------->CheckableImageButton{id=2131296799, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->CheckableImageButton{id=2131296800, res-name=text_input_error_icon, desc=ÈîôËØØ, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++---->TextInputLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=614.0, child-count=1}
+|
++----->FrameLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------>TextInputEditText{id=2131296306, res-name=account_note_input, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Â§áÊ≥® label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Â§áÊ≥®, input-type=1, ime-target=false, has-links=false}
+|
++------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------->CheckableImageButton{id=2131296801, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->AppCompatTextView{id=2131296806, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------->AppCompatTextView{id=2131296807, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-------->CheckableImageButton{id=2131296799, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->CheckableImageButton{id=2131296800, res-name=text_input_error_icon, desc=ÈîôËØØ, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++---->LinearLayout{id=-1, visibility=VISIBLE, width=672, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=865.0, child-count=2}
+|
++----->MaterialButton{id=2131296369, res-name=cancel_button, visibility=VISIBLE, width=308, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=ÂèñÊ∂à, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++----->MaterialButton{id=2131296686, res-name=save_button, visibility=VISIBLE, width=308, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=364.0, y=0.0, text=‰øùÂ≠ò, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-->ViewStub{id=16908747, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+The complete view hierarchy is available in artifact file 'view-hierarchy-1.txt'.
+at androidx.test.espresso.NoMatchingViewException$Builder.build(NoMatchingViewException.java:185)
+at androidx.test.espresso.base.DefaultFailureHandler.lambda$getNoMatchingViewExceptionTruncater$0(DefaultFailureHandler.java:93)
+at androidx.test.espresso.base.DefaultFailureHandler$$ExternalSyntheticLambda1.truncateExceptionMessage(Unknown Source:2)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:72)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:38)
+at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+at com.example.accountapp.MainActivityTest.mainActivityTest(MainActivityTest.java:76).androidx.test.espresso.NoMatchingViewException¿∂androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: view.getId() is <2131296524/com.example.accountapp:id/layout_account_name>
+If the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:androidx.appcompat.widget.AppCompatSpinner{c026481 VFED..CL. ........ 56,279-728,363 #7f090033 app:id/account_type_spinner aid=1073741825}
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=896, height=1201, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(wrapxwrap) gr=CENTER sim={adjust=pan} ty=APPLICATION fmt=TRANSLUCENT wanim=0x103030a
+fl=DIM_BEHIND SPLIT_TOUCH HARDWARE_ACCELERATED
+bhv=DEFAULT
+fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR
+frameRateBoostOnTouch=true
+dvrrWindowFrameRateHint=true}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++->FrameLayout{id=-1, visibility=VISIBLE, width=784, height=1089, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=56.0, child-count=2}
+|
++-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=784, height=1089, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++--->LinearLayout{id=-1, visibility=VISIBLE, width=784, height=1089, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}
+|
++---->TextInputLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=56.0, child-count=1}
+|
++----->FrameLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------>TextInputEditText{id=2131296305, res-name=account_name_input, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Ë¥¶Êà∑ÂêçÁß∞ label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Ë¥¶Êà∑ÂêçÁß∞, input-type=1, ime-target=false, has-links=false}
+|
++------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------->CheckableImageButton{id=2131296801, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->AppCompatTextView{id=2131296806, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------->AppCompatTextView{id=2131296807, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-------->CheckableImageButton{id=2131296799, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->CheckableImageButton{id=2131296800, res-name=text_input_error_icon, desc=ÈîôËØØ, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++---->AppCompatSpinner{id=2131296307, res-name=account_type_spinner, visibility=VISIBLE, width=672, height=84, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=279.0, child-count=1}
+|
++----->MaterialTextView{id=16908308, res-name=text1, visibility=VISIBLE, width=504, height=82, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1.0, text=Áé∞Èáë, input-type=0, ime-target=false, has-links=false}
+|
++---->TextInputLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=391.0, child-count=1}
+|
++----->FrameLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------>TextInputEditText{id=2131296304, res-name=account_balance_input, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2002 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x2000 hintText=‰ΩôÈ¢ù label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true contentMimeTypes=null ], x=0.0, y=0.0, text=100, hint=‰ΩôÈ¢ù, input-type=8194, ime-target=false, has-links=false}
+|
++------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------->CheckableImageButton{id=2131296801, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->AppCompatTextView{id=2131296806, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------->AppCompatTextView{id=2131296807, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-------->CheckableImageButton{id=2131296799, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->CheckableImageButton{id=2131296800, res-name=text_input_error_icon, desc=ÈîôËØØ, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++---->TextInputLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=614.0, child-count=1}
+|
++----->FrameLayout{id=-1, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------>TextInputEditText{id=2131296306, res-name=account_note_input, visibility=VISIBLE, width=672, height=195, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Â§áÊ≥® label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Â§áÊ≥®, input-type=1, ime-target=false, has-links=false}
+|
++------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------->CheckableImageButton{id=2131296801, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->AppCompatTextView{id=2131296806, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++------->AppCompatTextView{id=2131296807, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-------->CheckableImageButton{id=2131296799, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++------->CheckableImageButton{id=2131296800, res-name=text_input_error_icon, desc=ÈîôËØØ, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+|
++---->LinearLayout{id=-1, visibility=VISIBLE, width=672, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=56.0, y=865.0, child-count=2}
+|
++----->MaterialButton{id=2131296369, res-name=cancel_button, visibility=VISIBLE, width=308, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=ÂèñÊ∂à, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++----->MaterialButton{id=2131296686, res-name=save_button, visibility=VISIBLE, width=308, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=364.0, y=0.0, text=‰øùÂ≠ò, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-->ViewStub{id=16908747, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+The complete view hierarchy is available in artifact file 'view-hierarchy-1.txt'.
+at androidx.test.espresso.NoMatchingViewException$Builder.build(NoMatchingViewException.java:185)
+at androidx.test.espresso.base.DefaultFailureHandler.lambda$getNoMatchingViewExceptionTruncater$0(DefaultFailureHandler.java:93)
+at androidx.test.espresso.base.DefaultFailureHandler$$ExternalSyntheticLambda1.truncateExceptionMessage(Unknown Source:2)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:72)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:38)
+at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+at com.example.accountapp.MainActivityTest.mainActivityTest(MainActivityTest.java:76)"ÿ
 
-logcatandroid∆
-√C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.dao.AccountDaoTest-deleteAccount.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfoŒ
-b
-AccountDaoTestcom.example.accountapp.data.daoinsertAndGetAccount2ﬁ™Ë¿¿Ø’å:ﬁ™Ë¿¿¡…é"‚
-
-logcatandroidÃ
-…C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.dao.AccountDaoTest-insertAndGetAccount.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfo‰
-]
-AccountDaoTestcom.example.accountapp.data.daogetAccountById2ﬁ™Ë¿¿ √è:ﬁ™Ë¿Ä·Ùë"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfo¬
-\
-AccountDaoTestcom.example.accountapp.data.daoupdateAccount2ﬁ™Ë¿ÄÍÓí:ﬁ™Ë¿ÄÒï°"‹
-
-logcatandroid∆
-√C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.dao.AccountDaoTest-updateAccount.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfoˆ
-v
-AccountRepositoryTest&com.example.accountapp.data.repositorygetAccount_returnsAccount2ﬁ™Ë¿Ä˙è¢:ﬂ™Ë¿¿˜•î"ˆ
-
-logcatandroid‡
-›C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-getAccount_returnsAccount.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfoÜ
-~
-AccountRepositoryTest&com.example.accountapp.data.repository!getAllAccounts_returnsAllAccounts2ﬂ™Ë¿¿Ä†ï:ﬂ™Ë¿Äé◊ñ"˛
-
-logcatandroidË
-ÂC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-getAllAccounts_returnsAllAccounts.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfoÓ
-r
-AccountRepositoryTest&com.example.accountapp.data.repositoryupdate_callsDaoUpdate2ﬂ™Ë¿¿ê¡§:ﬂ™Ë¿Äû¯•"Ú
-
-logcatandroid‹
-ŸC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-update_callsDaoUpdate.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfoÓ
-r
-AccountRepositoryTest&com.example.accountapp.data.repositoryinsert_callsDaoInsert2ﬂ™Ë¿¿´Øß:ﬂ™Ë¿Ä∑ì∂"Ú
-
-logcatandroid‹
-ŸC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-insert_callsDaoInsert.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfoÓ
-r
-AccountRepositoryTest&com.example.accountapp.data.repositorydelete_callsDaoDelete2ﬂ™Ë¿¿ª–∂:ﬂ™Ë¿Ä“Åπ"Ú
-
-logcatandroid‹
-ŸC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.data.repository.AccountRepositoryTest-delete_callsDaoDelete.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfo¸
-y
-AccountsViewModelTest"com.example.accountapp.ui.accounts getAccount_returnsCorrectAccount2ﬂ™Ë¿¿÷æπ:ﬂ™Ë¿ÄÔÀ®"˘
-
-logcatandroid„
-‡C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.ui.accounts.AccountsViewModelTest-getAccount_returnsCorrectAccount.txt"®
-
-device-infoandroidç
-äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
-
-device-info.meminfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\meminfo"©
-
-device-info.cpuinfoandroidÜ
-ÉC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\cpuinfo˛
-z
-AccountsViewModelTest"com.example.accountapp.ui.accounts!getAllAccounts_returnsAllAccounts2ﬂ™Ë¿Ä¯≈©:ﬂ™Ë¿¿Ö˝™"˙
-
-logcatandroid‰
-·C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.ui.accounts.AccountsViewModelTest-getAllAccounts_returnsAllAccounts.txt"®
+logcatandroid¬
+øC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.MainActivityTest-mainActivityTest.txt"®
 
 device-infoandroidç
 äC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©
