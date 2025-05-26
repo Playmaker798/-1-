@@ -4,10 +4,6 @@
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\fragment_transactions.xml"
     },
     {
-        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/fragment_accounts.xml",
-        "source": "com.example.accountapp-main-55:/layout/fragment_accounts.xml"
-    },
-    {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-mergeDebugResources-52:\\layout\\dialog_account.xml",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\dialog_account.xml"
     },
@@ -30,6 +26,10 @@
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-mergeDebugResources-52:\\layout\\activity_main.xml",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.accountapp-mergeDebugResources-52:/layout/dialog_account.xml",
+        "source": "com.example.accountapp-main-55:/layout/dialog_account.xml"
     },
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-mergeDebugResources-52:\\layout\\fragment_add_transaction.xml",

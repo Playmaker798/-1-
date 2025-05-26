@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.accountapp.R;
 import com.example.accountapp.data.entity.Account;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.util.Arrays;
 
 public class AccountDialogFragment extends DialogFragment {
@@ -29,6 +30,8 @@ public class AccountDialogFragment extends DialogFragment {
     private OnAccountSaveListener listener;
     private AccountsViewModel viewModel;
     private long accountId = -1;
+    private TextInputLayout nameLayout;
+    private TextInputLayout balanceLayout;
 
     public interface OnAccountSaveListener {
         void onAccountSave(Account account);
@@ -86,6 +89,8 @@ public class AccountDialogFragment extends DialogFragment {
         noteInput = view.findViewById(R.id.account_note_input);
         saveButton = view.findViewById(R.id.save_button);
         cancelButton = view.findViewById(R.id.cancel_button);
+        nameLayout = view.findViewById(R.id.layout_account_name);
+        balanceLayout = view.findViewById(R.id.layout_balance);
     }
 
     private void setupSpinner() {
@@ -112,10 +117,20 @@ public class AccountDialogFragment extends DialogFragment {
         String balanceStr = balanceInput.getText().toString().trim();
         String note = noteInput.getText().toString().trim();
 
-        if (name.isEmpty() || balanceStr.isEmpty()) {
-            // 显示错误提示
-            return;
+        boolean hasError = false;
+        if (name.isEmpty()) {
+            nameLayout.setError("请输入账户名称");
+            hasError = true;
+        } else {
+            nameLayout.setError(null);
         }
+        if (balanceStr.isEmpty()) {
+            balanceLayout.setError("请输入有效的余额");
+            hasError = true;
+        } else {
+            balanceLayout.setError(null);
+        }
+        if (hasError) return;
 
         double balance = Double.parseDouble(balanceStr);
 

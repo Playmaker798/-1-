@@ -13,6 +13,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.accountapp.R;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -37,18 +38,27 @@ public final class DialogAccountBinding implements ViewBinding {
   public final Button cancelButton;
 
   @NonNull
+  public final TextInputLayout layoutAccountName;
+
+  @NonNull
+  public final TextInputLayout layoutBalance;
+
+  @NonNull
   public final Button saveButton;
 
   private DialogAccountBinding(@NonNull LinearLayout rootView,
       @NonNull TextInputEditText accountBalanceInput, @NonNull TextInputEditText accountNameInput,
       @NonNull TextInputEditText accountNoteInput, @NonNull Spinner accountTypeSpinner,
-      @NonNull Button cancelButton, @NonNull Button saveButton) {
+      @NonNull Button cancelButton, @NonNull TextInputLayout layoutAccountName,
+      @NonNull TextInputLayout layoutBalance, @NonNull Button saveButton) {
     this.rootView = rootView;
     this.accountBalanceInput = accountBalanceInput;
     this.accountNameInput = accountNameInput;
     this.accountNoteInput = accountNoteInput;
     this.accountTypeSpinner = accountTypeSpinner;
     this.cancelButton = cancelButton;
+    this.layoutAccountName = layoutAccountName;
+    this.layoutBalance = layoutBalance;
     this.saveButton = saveButton;
   }
 
@@ -109,6 +119,18 @@ public final class DialogAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layout_account_name;
+      TextInputLayout layoutAccountName = ViewBindings.findChildViewById(rootView, id);
+      if (layoutAccountName == null) {
+        break missingId;
+      }
+
+      id = R.id.layout_balance;
+      TextInputLayout layoutBalance = ViewBindings.findChildViewById(rootView, id);
+      if (layoutBalance == null) {
+        break missingId;
+      }
+
       id = R.id.save_button;
       Button saveButton = ViewBindings.findChildViewById(rootView, id);
       if (saveButton == null) {
@@ -116,7 +138,8 @@ public final class DialogAccountBinding implements ViewBinding {
       }
 
       return new DialogAccountBinding((LinearLayout) rootView, accountBalanceInput,
-          accountNameInput, accountNoteInput, accountTypeSpinner, cancelButton, saveButton);
+          accountNameInput, accountNoteInput, accountTypeSpinner, cancelButton, layoutAccountName,
+          layoutBalance, saveButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
