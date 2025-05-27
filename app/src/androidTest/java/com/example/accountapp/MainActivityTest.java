@@ -74,13 +74,13 @@ public class MainActivityTest {
         onView(withId(R.id.account_name_input)).perform(replaceText(""));
         onView(withId(R.id.account_balance_input)).perform(replaceText("100"));
         onView(withId(R.id.save_button)).perform(click());
-        onView(withId(R.id.layout_account_name)).check(matches(hasTextInputLayoutErrorText("请输入账户名称")));
+        onView(withId(R.id.layout_account_name)).check(matches(hasTextInputLayoutErrorText("Please enter account name")));
 
         // 必填项校验：不输入余额直接保存
         onView(withId(R.id.account_name_input)).perform(replaceText("测试账户"));
         onView(withId(R.id.account_balance_input)).perform(replaceText(""));
         onView(withId(R.id.save_button)).perform(click());
-        onView(withId(R.id.layout_balance)).check(matches(hasTextInputLayoutErrorText("请输入有效的余额")));
+        onView(withId(R.id.layout_balance)).check(matches(hasTextInputLayoutErrorText("Please enter a valid balance")));
 
         // 输入完整信息，选择账户类型
         onView(withId(R.id.account_name_input)).perform(replaceText("测试账户"));

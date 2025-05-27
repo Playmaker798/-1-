@@ -41,6 +41,9 @@ public final class DialogAccountBinding implements ViewBinding {
   public final TextInputLayout layoutAccountName;
 
   @NonNull
+  public final TextInputLayout layoutAccountType;
+
+  @NonNull
   public final TextInputLayout layoutBalance;
 
   @NonNull
@@ -50,7 +53,8 @@ public final class DialogAccountBinding implements ViewBinding {
       @NonNull TextInputEditText accountBalanceInput, @NonNull TextInputEditText accountNameInput,
       @NonNull TextInputEditText accountNoteInput, @NonNull Spinner accountTypeSpinner,
       @NonNull Button cancelButton, @NonNull TextInputLayout layoutAccountName,
-      @NonNull TextInputLayout layoutBalance, @NonNull Button saveButton) {
+      @NonNull TextInputLayout layoutAccountType, @NonNull TextInputLayout layoutBalance,
+      @NonNull Button saveButton) {
     this.rootView = rootView;
     this.accountBalanceInput = accountBalanceInput;
     this.accountNameInput = accountNameInput;
@@ -58,6 +62,7 @@ public final class DialogAccountBinding implements ViewBinding {
     this.accountTypeSpinner = accountTypeSpinner;
     this.cancelButton = cancelButton;
     this.layoutAccountName = layoutAccountName;
+    this.layoutAccountType = layoutAccountType;
     this.layoutBalance = layoutBalance;
     this.saveButton = saveButton;
   }
@@ -125,6 +130,12 @@ public final class DialogAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layout_account_type;
+      TextInputLayout layoutAccountType = ViewBindings.findChildViewById(rootView, id);
+      if (layoutAccountType == null) {
+        break missingId;
+      }
+
       id = R.id.layout_balance;
       TextInputLayout layoutBalance = ViewBindings.findChildViewById(rootView, id);
       if (layoutBalance == null) {
@@ -139,7 +150,7 @@ public final class DialogAccountBinding implements ViewBinding {
 
       return new DialogAccountBinding((LinearLayout) rootView, accountBalanceInput,
           accountNameInput, accountNoteInput, accountTypeSpinner, cancelButton, layoutAccountName,
-          layoutBalance, saveButton);
+          layoutAccountType, layoutBalance, saveButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

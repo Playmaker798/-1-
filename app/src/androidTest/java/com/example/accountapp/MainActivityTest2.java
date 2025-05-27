@@ -1,14 +1,18 @@
 package com.example.accountapp;
 
-
 import androidx.test.espresso.DataInteraction;
 import androidx.test.espresso.ViewInteraction;
+import androidx.test.espresso.UiController;
+import androidx.test.espresso.ViewAction;
+import androidx.test.espresso.PerformException;
+import androidx.test.espresso.util.HumanReadables;
 import androidx.test.filters.LargeTest;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+import android.widget.TextView;
 
 import static androidx.test.InstrumentationRegistry.getInstrumentation;
 import static androidx.test.espresso.Espresso.onData;
@@ -20,6 +24,8 @@ import static androidx.test.espresso.action.ViewActions.*;
 import static androidx.test.espresso.assertion.ViewAssertions.*;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
 import static androidx.test.espresso.matcher.RootMatchers.isPlatformPopup;
+import static androidx.test.espresso.matcher.RootMatchers.isDialog;
+import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
 
 import com.example.accountapp.R;
 
@@ -30,11 +36,17 @@ import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.function.ThrowingRunnable;
+
+import java.util.concurrent.TimeoutException;
 
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.anyOf;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.not;
+import static org.hamcrest.Matchers.any;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
@@ -46,168 +58,97 @@ public class MainActivityTest2 {
 
     @Test
     public void mainActivityTest2() {
+        // 1. 新增账户
         onView(withId(R.id.navigation_accounts)).perform(click());
-        
         onView(withId(R.id.fabAddAccount)).perform(click());
-        
-        ViewInteraction textInputEditText = onView(
-        allOf(withId(R.id.account_name_input),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_account_name),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText.perform(replaceText("AA"), closeSoftKeyboard());
-        
-        ViewInteraction textInputEditText2 = onView(
-        allOf(withId(R.id.account_balance_input),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_balance),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText2.perform(replaceText("111"), closeSoftKeyboard());
-        
-        ViewInteraction textInputEditText3 = onView(
-        allOf(withId(R.id.account_note_input),
-        childAtPosition(
-        childAtPosition(
-        withClassName(is("com.google.android.material.textfield.TextInputLayout")),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText3.perform(replaceText(""), closeSoftKeyboard());
-        
-        onView(withId(R.id.save_button)).perform(click());
-
-        onView(withId(R.id.recyclerViewAccounts)).check(matches(isDisplayed()));
-        
-        ViewInteraction recyclerView = onView(
-        allOf(withId(R.id.recyclerViewAccounts),
-        childAtPosition(
-        withClassName(is("androidx.coordinatorlayout.widget.CoordinatorLayout")),
-        0)));
-        recyclerView.perform(actionOnItemAtPosition(0, click()));
-        
-        ViewInteraction editText = onView(
-        allOf(withId(R.id.account_name_input), withText("AA"),
-        withParent(withParent(withId(R.id.layout_account_name))),
-        isDisplayed()));
-        editText.check(matches(withText("AA")));
-
+        onView(withId(R.id.account_name_input)).perform(replaceText("AA"), closeSoftKeyboard());
+        onView(withId(R.id.account_balance_input)).perform(replaceText("111"), closeSoftKeyboard());
+        onView(withId(R.id.account_note_input)).perform(replaceText("初始备注"), closeSoftKeyboard());
         onView(withId(R.id.account_type_spinner)).perform(click());
         onView(withText("储蓄卡")).inRoot(isPlatformPopup()).perform(click());
-
-        onView(withId(R.id.account_type_spinner))
-            .check(matches(withSpinnerText(org.hamcrest.Matchers.containsString("储蓄卡"))));
-        
-        ViewInteraction editText2 = onView(
-        allOf(withId(R.id.account_balance_input), withText("111.0"),
-        withParent(withParent(withId(R.id.layout_balance))),
-        isDisplayed()));
-        editText2.check(matches(withText("111.0")));
-        
-        ViewInteraction editText3 = onView(
-        allOf(withId(R.id.account_note_input), withText(""),
-        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class))),
-        isDisplayed()));
-        editText3.check(matches(withText("")));
-        
-        ViewInteraction editText4 = onView(
-        allOf(withId(R.id.account_note_input), withText(""),
-        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class))),
-        isDisplayed()));
-        editText4.check(matches(withText("")));
-        
-        ViewInteraction textInputEditText4 = onView(
-        allOf(withId(R.id.account_balance_input), withText("111.0"),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_balance),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText4.perform(replaceText(""));
-        
-        ViewInteraction textInputEditText5 = onView(
-        allOf(withId(R.id.account_balance_input),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_balance),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText5.perform(closeSoftKeyboard());
-        
         onView(withId(R.id.save_button)).perform(click());
 
-        onView(withId(R.id.layout_balance)).check(matches(hasTextInputLayoutErrorText("请输入有效的余额")));
-        
-        ViewInteraction textInputEditText6 = onView(
-        allOf(withId(R.id.account_name_input), withText("AA"),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_account_name),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText6.perform(replaceText(""));
-        
-        ViewInteraction textInputEditText7 = onView(
-        allOf(withId(R.id.account_name_input),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_account_name),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText7.perform(closeSoftKeyboard());
-        
-        ViewInteraction textInputEditText8 = onView(
-        allOf(withId(R.id.account_balance_input),
-        childAtPosition(
-        childAtPosition(
-        withId(R.id.layout_balance),
-        0),
-        0),
-        isDisplayed()));
-        textInputEditText8.perform(replaceText("123"), closeSoftKeyboard());
-        
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewAccounts));
+        onView(withText("AA")).check(matches(isDisplayed()));
+
+        onView(withId(R.id.recyclerViewAccounts)).perform(actionOnItemAtPosition(0, click()));
+
+        waitForViewToBeDisplayed(withId(R.id.layout_account_name));
+        onView(withId(R.id.account_name_input)).check(matches(isDisplayed()));
+
+        onView(withId(R.id.account_name_input)).check(matches(withEditTextContent("AA")));
+        onView(withId(R.id.account_balance_input)).check(matches(withEditTextContent("111.0")));
+        onView(withId(R.id.account_note_input)).check(matches(withEditTextContent("初始备注")));
+        onView(withId(R.id.account_type_spinner)).check(matches(withSpinnerText(containsString("储蓄卡"))));
+
+        onView(withId(R.id.account_name_input)).perform(replaceText("BB"), closeSoftKeyboard());
+        onView(withId(R.id.account_balance_input)).perform(replaceText("222"), closeSoftKeyboard());
+        onView(withId(R.id.account_note_input)).perform(replaceText("新备注"), closeSoftKeyboard());
+        onView(withId(R.id.account_type_spinner)).perform(click());
+        onView(withText("现金")).inRoot(isPlatformPopup()).perform(click());
         onView(withId(R.id.save_button)).perform(click());
-        onView(isRoot()).perform(closeSoftKeyboard());
-        try {
-            onView(withId(R.id.account_name_input)).check(matches(isDisplayed()));
-            onView(withId(R.id.layout_account_name)).check((view, noViewFoundException) -> {
-                if (view instanceof com.google.android.material.textfield.TextInputLayout) {
-                    CharSequence error = ((com.google.android.material.textfield.TextInputLayout) view).getError();
-                    System.out.println("账户名错误提示: " + error);
-                }
-            });
-            onView(withId(R.id.layout_balance)).check((view, noViewFoundException) -> {
-                if (view instanceof com.google.android.material.textfield.TextInputLayout) {
-                    CharSequence error = ((com.google.android.material.textfield.TextInputLayout) view).getError();
-                    System.out.println("余额错误提示: " + error);
-                }
-            });
-            throw new AssertionError("保存失败，未能关闭对话框，请检查错误提示内容。");
-        } catch (androidx.test.espresso.NoMatchingViewException e) {
-            onView(withId(R.id.recyclerViewAccounts)).check(matches(isDisplayed()));
-            onView(allOf(withId(R.id.textViewAccountName), withText("BB"),
-                withParent(withParent(IsInstanceOf.<View>instanceOf(androidx.cardview.widget.CardView.class))),
-                isDisplayed()))
-                .check(matches(withText("BB")));
-            onView(allOf(withId(R.id.textViewAccountType), withText("储蓄卡"),
-                withParent(withParent(IsInstanceOf.<View>instanceOf(androidx.cardview.widget.CardView.class))),
-                isDisplayed()))
-                .check(matches(withText("储蓄卡")));
-            onView(allOf(withId(R.id.textViewBalance), withText("$1234.00"),
-                withParent(withParent(IsInstanceOf.<View>instanceOf(androidx.cardview.widget.CardView.class))),
-                isDisplayed()))
-                .check(matches(withText("$1234.00")));
-        }
-        return;
+
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewAccounts));
+        onView(withText("BB")).check(matches(isDisplayed()));
+        onView(withText("现金")).check(matches(isDisplayed()));
+        onView(withText("$222.00")).check(matches(isDisplayed()));
+
+        onView(withId(R.id.recyclerViewAccounts)).perform(actionOnItemAtPosition(0, click()));
+
+        waitForViewToBeDisplayed(withId(R.id.layout_account_name));
+        onView(withId(R.id.account_name_input)).check(matches(isDisplayed()));
+
+        onView(withId(R.id.account_name_input)).perform(replaceText(""), closeSoftKeyboard());
+        onView(withId(R.id.save_button)).perform(click());
+
+        onView(withId(R.id.account_name_input)).check(matches(isDisplayed()));
+        onView(withId(R.id.layout_account_name)).check(matches(hasTextInputLayoutErrorText(containsString("Please enter account name"))));
+
+        pressBack();
+
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewAccounts));
+
+        onView(withId(R.id.recyclerViewAccounts)).perform(actionOnItemAtPosition(0, click()));
+
+        waitForViewToBeDisplayed(withId(R.id.layout_account_name));
+        onView(withId(R.id.account_balance_input)).check(matches(isDisplayed()));
+
+        onView(withId(R.id.account_balance_input)).perform(replaceText(""), closeSoftKeyboard());
+        onView(withId(R.id.save_button)).perform(click());
+
+        onView(withId(R.id.account_balance_input)).check(matches(isDisplayed()));
+        onView(withId(R.id.layout_balance)).check(matches(hasTextInputLayoutErrorText(containsString("Please enter a valid balance"))));
+
+        pressBack();
+
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewAccounts));
+
+        onView(withId(R.id.recyclerViewAccounts)).perform(actionOnItemAtPosition(0, click()));
+
+        waitForViewToBeDisplayed(withId(R.id.layout_account_name));
+
+        onView(withId(R.id.account_type_spinner)).perform(click());
+        onView(withText("请选择")).inRoot(isPlatformPopup()).perform(click());
+        onView(withId(R.id.save_button)).perform(click());
+
+        onView(withText("Please select account type"))
+            .inRoot(isDialog())
+            .check(matches(isDisplayed()));
+
+        pressBack();
+
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewAccounts));
+
+        onView(withId(R.id.recyclerViewAccounts)).perform(actionOnItemAtPosition(0, click()));
+
+        waitForViewToBeDisplayed(withId(R.id.layout_account_name));
+
+        onView(withId(R.id.account_type_spinner)).perform(click());
+        onView(withText("现金")).inRoot(isPlatformPopup()).perform(click());
+        onView(withId(R.id.save_button)).perform(click());
+
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewAccounts));
+        onView(withText("现金")).check(matches(isDisplayed()));
     }
 
     private static Matcher<View> childAtPosition(
@@ -229,11 +170,12 @@ public class MainActivityTest2 {
         };
     }
 
-    public static TypeSafeMatcher<View> hasTextInputLayoutErrorText(final String expectedErrorText) {
+    public static TypeSafeMatcher<View> hasTextInputLayoutErrorText(final Matcher<String> errorTextMatcher) {
         return new TypeSafeMatcher<View>() {
             @Override
             public void describeTo(Description description) {
-                description.appendText("TextInputLayout error text: " + expectedErrorText);
+                description.appendText("TextInputLayout error text: ");
+                errorTextMatcher.describeTo(description);
             }
             @Override
             public boolean matchesSafely(View view) {
@@ -241,9 +183,81 @@ public class MainActivityTest2 {
                     return false;
                 }
                 CharSequence error = ((com.google.android.material.textfield.TextInputLayout) view).getError();
-                if (error == null) return false;
-                return expectedErrorText.contentEquals(error);
+                return error != null && errorTextMatcher.matches(error.toString());
             }
         };
+    }
+
+    public static Matcher<View> withEditTextContent(final String expected) {
+        return new TypeSafeMatcher<View>() {
+            @Override
+            public boolean matchesSafely(View view) {
+                if (!(view instanceof android.widget.EditText)) return false;
+                CharSequence text = ((android.widget.EditText) view).getText();
+                return text != null && text.toString().equals(expected);
+            }
+            @Override
+            public void describeTo(org.hamcrest.Description description) {
+                description.appendText("with EditText content: " + expected);
+            }
+        };
+    }
+
+    public static Matcher<View> withToastText(final String expectedText) {
+        return new TypeSafeMatcher<View>() {
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with toast text: " + expectedText);
+            }
+
+            @Override
+            public boolean matchesSafely(View view) {
+                if (!(view instanceof TextView)) {
+                    return false;
+                }
+                String text = ((TextView) view).getText().toString();
+                return expectedText.equals(text);
+            }
+        };
+    }
+
+    public static Matcher<View> withSpinnerText(final Matcher<String> textMatcher) {
+        return new TypeSafeMatcher<View>() {
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("with spinner text: ");
+                textMatcher.describeTo(description);
+            }
+
+            @Override
+            public boolean matchesSafely(View view) {
+                if (!(view instanceof android.widget.Spinner)) {
+                    return false;
+                }
+                android.widget.Spinner spinner = (android.widget.Spinner) view;
+                Object selectedItem = spinner.getSelectedItem();
+                return selectedItem != null && textMatcher.matches(selectedItem.toString());
+            }
+        };
+    }
+
+    private void waitForViewToBeDisplayed(final Matcher<View> viewMatcher) {
+        final long startTime = System.currentTimeMillis();
+        final long endTime = startTime + 15000; // 15 seconds timeout
+        final long checkInterval = 100; // 100ms between checks
+
+        while (System.currentTimeMillis() < endTime) {
+            try {
+                onView(viewMatcher).check(matches(isDisplayed()));
+                return;
+            } catch (Exception e) {
+            }
+            try {
+                Thread.sleep(checkInterval);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        throw new RuntimeException("Timeout waiting for view to be displayed: " + viewMatcher.toString());
     }
 }

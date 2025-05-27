@@ -32,6 +32,7 @@ public class AccountDialogFragment extends DialogFragment {
     private long accountId = -1;
     private TextInputLayout nameLayout;
     private TextInputLayout balanceLayout;
+    private TextInputLayout typeLayout;
 
     public interface OnAccountSaveListener {
         void onAccountSave(Account account);
@@ -91,15 +92,21 @@ public class AccountDialogFragment extends DialogFragment {
         cancelButton = view.findViewById(R.id.cancel_button);
         nameLayout = view.findViewById(R.id.layout_account_name);
         balanceLayout = view.findViewById(R.id.layout_balance);
+        typeLayout = view.findViewById(R.id.layout_account_type);
     }
 
     private void setupSpinner() {
+        // 添加"请选择"作为第一个选项
+        String[] types = new String[Account.AccountType.values().length + 1];
+        types[0] = "请选择";
+        for (int i = 0; i < Account.AccountType.values().length; i++) {
+            types[i + 1] = Account.AccountType.values()[i].getDisplayName();
+        }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
             requireContext(),
             android.R.layout.simple_spinner_item,
-            Arrays.stream(Account.AccountType.values())
-                  .map(Account.AccountType::getDisplayName)
-                  .toArray(String[]::new)
+            types
         );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         typeSpinner.setAdapter(adapter);
@@ -111,27 +118,49 @@ public class AccountDialogFragment extends DialogFragment {
     }
 
     private void saveAccount() {
-        String name = nameInput.getText().toString().trim();
+        String name = nameInput.getText() != null ? nameInput.getText().toString().trim() : "";
         int typeIndex = typeSpinner.getSelectedItemPosition();
-        Account.AccountType type = Account.AccountType.values()[typeIndex];
-        String balanceStr = balanceInput.getText().toString().trim();
-        String note = noteInput.getText().toString().trim();
+        String balanceStr = balanceInput.getText() != null ? balanceInput.getText().toString().trim() : "";
+        String note = noteInput.getText() != null ? noteInput.getText().toString().trim() : "";
 
         boolean hasError = false;
+        // 校验账户名
         if (name.isEmpty()) {
-            nameLayout.setError("请输入账户名称");
+            nameLayout.setError("Please enter account name");
             hasError = true;
         } else {
             nameLayout.setError(null);
         }
+        // 校验余额
         if (balanceStr.isEmpty()) {
-            balanceLayout.setError("请输入有效的余额");
+            balanceLayout.setError("Please enter a valid balance");
             hasError = true;
         } else {
-            balanceLayout.setError(null);
+            try {
+                double balance = Double.parseDouble(balanceStr);
+                if (balance < 0) {
+                    balanceLayout.setError("Balance cannot be negative");
+                    hasError = true;
+                } else {
+                    balanceLayout.setError(null);
+                }
+            } catch (NumberFormatException e) {
+                balanceLayout.setError("Please enter a valid number");
+                hasError = true;
+            }
         }
+        // 校验类型
+        if (typeIndex == 0) { // 选择了"请选择"
+            typeLayout.setError("Please select account type");
+            hasError = true;
+        } else {
+            typeLayout.setError(null);
+        }
+        // 只要有错误就返回
         if (hasError) return;
 
+        // 获取实际选择的类型（需要减1因为第一个是"请选择"）
+        Account.AccountType type = Account.AccountType.values()[typeIndex - 1];
         double balance = Double.parseDouble(balanceStr);
 
         if (account == null) {
@@ -154,7 +183,8 @@ public class AccountDialogFragment extends DialogFragment {
     private void populateFields() {
         if (account != null) {
             nameInput.setText(account.getName());
-            typeSpinner.setSelection(account.getType().ordinal());
+            // 设置类型时需要加1，因为第一个是"请选择"
+            typeSpinner.setSelection(account.getType().ordinal() + 1);
             balanceInput.setText(String.valueOf(account.getBalance()));
             noteInput.setText(account.getNote());
         }

@@ -1,0 +1,314 @@
+05-27 11:10:26.848 19885 19898 I TestRunner: started: mainActivityTest(com.example.accountapp.MainActivityTest)
+05-27 11:10:26.860 19885 19898 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-27 11:10:26.873   617   997 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10495, packageName = null, attributionTag = null, token = android.os.Binder@34c6ab2, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-27 11:10:26.882  1149  1149 W SplitSelectStateCtor: Missing session instanceIds
+05-27 11:10:26.882  1149  1149 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+05-27 11:10:26.884   903  1013 D SplashScreenView: Build android.window.SplashScreenView{886d3b4 V.E...... ......ID 0,0-0,0}
+05-27 11:10:26.884   903  1013 D SplashScreenView: Icon: view: null drawable: null size: 0
+05-27 11:10:26.884   903  1013 D SplashScreenView: Branding: view: android.view.View{7212bdd G.ED..... ......I. 0,0-0,0 #1020503 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+05-27 11:10:26.890  1149  1149 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=1032, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.accountapp/.MainActivity }
+05-27 11:10:26.953   453   453 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+05-27 11:10:26.958 19885 19885 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-27 11:10:26.967 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: PRE_ON_CREATE
+05-27 11:10:26.967 19885 19885 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+05-27 11:10:27.033  1149  1686 D EGL_emulation: app_time_stats: avg=76.92ms min=12.48ms max=1401.18ms count=23
+05-27 11:10:27.040   617   707 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+05-27 11:10:27.119  1149  1686 D EGL_emulation: app_time_stats: avg=464.14ms min=2.65ms max=10041.52ms count=23
+05-27 11:10:27.124   903  1048 D EGL_emulation: app_time_stats: avg=573.39ms min=4.12ms max=10274.83ms count=19
+05-27 11:10:27.153   617   795 D WifiConfigStore: Writing to stores completed in 11 ms.
+05-27 11:10:27.345  1149  1149 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-27 11:10:27.357  1149  1149 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-27 11:10:27.394 19885 19885 W mple.accountapp: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+05-27 11:10:27.429 19885 19885 W mple.accountapp: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+05-27 11:10:27.450 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: CREATED
+05-27 11:10:27.450 19885 19885 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.accountapp.MainActivity@ee1daf6
+05-27 11:10:27.458 19885 19889 I mple.accountapp: Compiler allocated 4219KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+05-27 11:10:27.480   617   804 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-27 11:10:27.480   617   804 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-27 11:10:27.480   617   804 D InetDiagMessage: Destroyed live tcp sockets for uids={10146} in 1ms
+05-27 11:10:27.499   885   885 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS
+05-27 11:10:27.559 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: STARTED
+05-27 11:10:27.559 19885 19885 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.accountapp.MainActivity@ee1daf6
+05-27 11:10:27.562 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: RESUMED
+05-27 11:10:27.562 19885 19885 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.accountapp.MainActivity@ee1daf6
+05-27 11:10:27.568 19885 19885 W HWUI    : Unknown dataspace 0
+05-27 11:10:27.615   453   489 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10495 pid=0
+05-27 11:10:27.616   453   716 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10495 pid=19885
+05-27 11:10:27.616   453   489 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10495 => denied (719 us)
+05-27 11:10:27.616   453   716 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10495 => denied (224 us)
+05-27 11:10:27.616   453   489 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10495 pid=0
+05-27 11:10:27.616   453   489 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10495 => denied (298 us)
+05-27 11:10:27.616   453   716 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10495 pid=19885
+05-27 11:10:27.616   453   716 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10495 => denied (467 us)
+05-27 11:10:27.616   453   489 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10495 pid=0
+05-27 11:10:27.617   453   489 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10495 => denied (417 us)
+05-27 11:10:27.617   453   716 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10495 pid=19885
+05-27 11:10:27.617   453   716 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10495 => denied (355 us)
+05-27 11:10:27.618 19885 19900 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+05-27 11:10:27.619 19885 19900 I EGL_emulation: Opening libGLESv2_emulation.so
+05-27 11:10:27.628 19885 19900 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-27 11:10:27.628 19885 19900 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-27 11:10:27.676   617   804 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-27 11:10:27.678   617   804 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-27 11:10:27.679   617   804 D InetDiagMessage: Destroyed live tcp sockets for uids={10095} in 3ms
+05-27 11:10:27.680   181   181 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+05-27 11:10:27.680 19885 19900 I Gralloc4: mapper 4.x is not supported
+05-27 11:10:27.739  1118  1651 I ActivityScheduler: nextTriggerTime: 120843232, in 238100ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 80000
+05-27 11:10:27.769   617   804 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-27 11:10:27.770   617   804 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-27 11:10:27.772   617   804 D InetDiagMessage: Destroyed live tcp sockets for uids={10099} in 3ms
+05-27 11:10:27.826   617   707 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10495 pid=0
+05-27 11:10:27.826   617   707 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10495 => denied (189 us)
+05-27 11:10:27.826   617   707 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10495 pid=0
+05-27 11:10:27.826   617   707 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10495 => denied (105 us)
+05-27 11:10:27.826   617   707 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10495 pid=0
+05-27 11:10:27.826   617   707 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10495 => denied (102 us)
+05-27 11:10:27.829   617   642 W ziparchive: Unable to open '/data/app/~~wrvYFK8Cv513gz7pSNCG-g==/com.example.accountapp-pLxlozlEkuVxDqhqTLN71g==/base.dm': No such file or directory
+05-27 11:10:27.830   617   642 I ActivityTaskManager: Displayed com.example.accountapp/.MainActivity for user 0: +958ms
+05-27 11:10:27.834 19885 19889 I mple.accountapp: Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+05-27 11:10:27.851  1620  1961 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[efa6598b-0743]>Handler" thread_id=62 ]
+05-27 11:10:27.852  1118  1487 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+05-27 11:10:27.852  1118  1487 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+05-27 11:10:27.853  1620  1810 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=57 ]
+05-27 11:10:27.856   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.857   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.857   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.857   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.858   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.858   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.858   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.859   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.859   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.859   617   804 W IPCThreadState: Sending oneway calls to frozen process.
+05-27 11:10:27.868  1620  1961 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=62 ]
+05-27 11:10:27.874   617   764 I ImeTracker: com.example.accountapp:f92bf94: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+05-27 11:10:27.875   617   764 I ImeTracker: com.example.accountapp:f92bf94: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-27 11:10:27.879  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+05-27 11:10:27.883  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+05-27 11:10:27.883  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.accountapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-27 11:10:27.883  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+05-27 11:10:27.884  1410  1410 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password-ascii, password_ascii
+05-27 11:10:27.899  1149  1149 D BaseDepthController: setSurface:
+05-27 11:10:27.899  1149  1149 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-27 11:10:27.899  1149  1149 D BaseDepthController: 	mSurface: null
+05-27 11:10:27.900  1149  1149 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+05-27 11:10:27.901  1149  1149 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+05-27 11:10:27.901  1149  1149 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:4)
+05-27 11:10:27.901  1149  1149 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:1)
+05-27 11:10:27.901  1149  1149 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:34)
+05-27 11:10:27.901  1149  1149 D StatsLog: LAUNCHER_ONSTOP
+05-27 11:10:27.903  1149  1149 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+05-27 11:10:27.903  1149  1739 D OneSearchSuggestProvider: Shut down the binder channel
+05-27 11:10:27.909  1149  5470 I IPCThreadState: oneway function results for code 2 on binder at 0x7e9dd740ae20 will be dropped but finished with status UNKNOWN_TRANSACTION
+05-27 11:10:27.921   391   391 I netd    : tetherGetStats() -> {[]} <0.44ms>
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: enableTracing failed. You may need to upgrade your androidx.tracing:tracing version
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: java.lang.NoSuchMethodError: No static method forceEnableAppTracing()V in class Landroidx/tracing/Trace; or its super classes (declaration of 'androidx.tracing.Trace' appears in /data/app/~~wrvYFK8Cv513gz7pSNCG-g==/com.example.accountapp-pLxlozlEkuVxDqhqTLN71g==/base.apk)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.platform.tracing.AndroidXTracer.enableTracing(AndroidXTracer.java:57)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.platform.tracing.Tracing.<init>(Tracing.java:53)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.platform.tracing.Tracing.<clinit>(Tracing.java:49)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule.providesTracing(BaseLayerModule.java:190)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.providesTracing(BaseLayerModule_ProvidesTracingFactory.java:41)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.get(BaseLayerModule_ProvidesTracingFactory.java:33)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.get(BaseLayerModule_ProvidesTracingFactory.java:11)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.core.internal.deps.dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.base.IdlingResourceRegistry_Factory.get(IdlingResourceRegistry_Factory.java:38)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.base.IdlingResourceRegistry_Factory.get(IdlingResourceRegistry_Factory.java:12)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.core.internal.deps.dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.DaggerBaseLayerComponent$BaseLayerComponentImpl.idlingResourceRegistry(DaggerBaseLayerComponent.java:279)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.espresso.Espresso.<clinit>(Espresso.java:64)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at com.example.accountapp.MainActivityTest.mainActivityTest(MainActivityTest.java:52)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at java.lang.reflect.Method.invoke(Native Method)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+05-27 11:10:27.953 19885 19898 E AndroidXTracer: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+05-27 11:10:27.954 19885 19898 E AndroidXTracer: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:467)
+05-27 11:10:27.954 19885 19898 E AndroidXTracer: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2594)
+05-27 11:10:27.955 19885 19898 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+05-27 11:10:27.962 19885 19898 D CompatChangeReporter: Compat change id reported: 247079863; UID 10495; state: ENABLED
+05-27 11:10:27.971 19885 19898 D EventInjectionStrategy: Creating injection strategy with input manager.
+05-27 11:10:27.971 19885 19898 W mple.accountapp: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+05-27 11:10:27.973 19885 19898 W mple.accountapp: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+05-27 11:10:27.974 19885 19898 W mple.accountapp: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+05-27 11:10:27.997 19885 19898 W mple.accountapp: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+05-27 11:10:28.007 19885 19885 W mple.accountapp: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+05-27 11:10:28.007 19885 19885 W mple.accountapp: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+05-27 11:10:28.008 19885 19885 W mple.accountapp: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+05-27 11:10:28.020 19885 19885 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131296604/com.example.accountapp:id/navigation_accounts> and view.getContentDescription() is "账户" and Child at position 1 in parent Child at position 0 in parent view.getId() is <2131296603/com.example.accountapp:id/nav_view> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+05-27 11:10:28.077  1118  1487 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+05-27 11:10:28.077  1118  1487 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+05-27 11:10:28.079  1118  1487 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+05-27 11:10:28.082  1118  2911 I FontLog : Pulling font file for id = 263, cache size = 4 [CONTEXT service_id=132 ]
+05-27 11:10:28.085  1118  2911 I FontLog : Pulling font file for id = 263, cache size = 4 [CONTEXT service_id=132 ]
+05-27 11:10:28.102   442 11697 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+05-27 11:10:28.103   617  1772 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+05-27 11:10:28.104   442   546 D AudioFlinger: mixer(0x7dfe30c4e8e0) throttle end: throttle time(41)
+05-27 11:10:28.115   903  1012 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@8977720
+05-27 11:10:28.117   617  1772 W InputManager-JNI: Input channel object '2e0acd6 Splash Screen com.example.accountapp (client)' was disposed without first being removed with the input manager!
+05-27 11:10:28.119 19885 19885 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+05-27 11:10:28.119 19885 19885 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+05-27 11:10:28.196  1149  1686 D EGL_emulation: app_time_stats: avg=34.88ms min=1.71ms max=702.74ms count=23
+05-27 11:10:28.265   442   546 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+05-27 11:10:28.308   903  1048 D EGL_emulation: app_time_stats: avg=107.39ms min=2.68ms max=1030.47ms count=10
+05-27 11:10:28.411 19885 19885 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131296465/com.example.accountapp:id/fabAddAccount> and view.getContentDescription() is "添加账户" and Child at position 2 in parent Child at position 0 in parent view.getId() is <2131296601/com.example.accountapp:id/nav_host_fragment_activity_main> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+05-27 11:10:28.478   442 11697 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+05-27 11:10:28.479   617  1772 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+05-27 11:10:28.489   442   546 D AudioFlinger: mixer(0x7dfe30c4e8e0) throttle end: throttle time(40)
+05-27 11:10:28.633 19885 19885 D AutofillManager: view not autofillable - has multiline input type
+05-27 11:10:28.634 19885 19885 D AutofillManager: view not autofillable - has multiline input type
+05-27 11:10:28.679 19885 19885 D AutofillManager: notifyViewReadyInner:1073741824
+05-27 11:10:28.682 19885 19885 D AutofillManager: notifyViewReadyInner:1073741825
+05-27 11:10:28.683 19885 19885 D AutofillManager: notifyViewReadyInner:1073741826
+05-27 11:10:28.701   442   546 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+05-27 11:10:28.823   617   764 I ImeTracker: com.example.accountapp:16c50429: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+05-27 11:10:28.824   617   764 I ImeTracker: com.example.accountapp:16c50429: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-27 11:10:28.824  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+05-27 11:10:28.827  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+05-27 11:10:28.829  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.accountapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-27 11:10:28.831  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+05-27 11:10:28.832  1410  1410 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password-ascii, password_ascii
+05-27 11:10:28.879 19885 19900 D EGL_emulation: app_time_stats: avg=17.46ms min=2.26ms max=89.66ms count=54
+05-27 11:10:29.026 19885 19885 I ViewInteraction: Performing 'replace text()' action on view view.getId() is <2131296305/com.example.accountapp:id/account_name_input>
+05-27 11:10:29.048 19885 19885 I ViewInteraction: Performing 'replace text(100)' action on view view.getId() is <2131296304/com.example.accountapp:id/account_balance_input>
+05-27 11:10:29.077 19885 19885 I AssistStructure: Flattened final assist data: 6676 bytes, containing 2 windows, 54 views
+05-27 11:10:29.090 19885 19885 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296686/com.example.accountapp:id/save_button>
+05-27 11:10:29.141   442 11697 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+05-27 11:10:29.141   617  1003 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+05-27 11:10:29.375   442   546 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+05-27 11:10:29.490 19885 19885 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with TextInputLayout error text: Please enter account name}' assertion on view view.getId() is <2131296524/com.example.accountapp:id/layout_account_name>
+05-27 11:10:29.492 19885 19885 I ViewInteraction: Performing 'replace text(测试账户)' action on view view.getId() is <2131296305/com.example.accountapp:id/account_name_input>
+05-27 11:10:29.609 19885 19885 I ViewInteraction: Performing 'replace text()' action on view view.getId() is <2131296304/com.example.accountapp:id/account_balance_input>
+05-27 11:10:29.626 19885 19885 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296686/com.example.accountapp:id/save_button>
+05-27 11:10:29.670   442 11697 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+05-27 11:10:29.671   617  1003 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+05-27 11:10:29.895   442   546 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+05-27 11:10:30.114 19885 19885 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with TextInputLayout error text: Please enter a valid balance}' assertion on view view.getId() is <2131296526/com.example.accountapp:id/layout_balance>
+05-27 11:10:30.118 19885 19885 I ViewInteraction: Performing 'replace text(测试账户)' action on view view.getId() is <2131296305/com.example.accountapp:id/account_name_input>
+05-27 11:10:30.131 19885 19885 I ViewInteraction: Performing 'replace text(100)' action on view view.getId() is <2131296304/com.example.accountapp:id/account_balance_input>
+05-27 11:10:30.146 19885 19885 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296307/com.example.accountapp:id/account_type_spinner>
+05-27 11:10:30.585 19885 19885 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "现金"
+05-27 11:10:30.697   442 11697 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+05-27 11:10:30.697   617   996 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+05-27 11:10:30.751 19885 19900 D EGL_emulation: app_time_stats: avg=10.49ms min=1.91ms max=41.63ms count=58
+05-27 11:10:30.794   617   764 I ImeTracker: com.example.accountapp:b29fb5d0: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+05-27 11:10:30.794   617   764 I ImeTracker: com.example.accountapp:b29fb5d0: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-27 11:10:30.796  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+05-27 11:10:30.798  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+05-27 11:10:30.798  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.accountapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-27 11:10:30.799  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+05-27 11:10:30.800  1410  1410 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password-ascii, password_ascii
+05-27 11:10:30.917   442   546 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+05-27 11:10:31.031 19885 19885 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@36c4483
+05-27 11:10:31.062 19885 19900 D HWUI    : endAllActiveAnimators on 0x7e9e973ddf20 (DropDownListView) with handle 0x7e9dd73e71e0
+05-27 11:10:31.064   617  1003 W InputManager-JNI: Input channel object '62f7218 PopupWindow:7817494 (client)' was disposed without first being removed with the input manager!
+05-27 11:10:31.162 19885 19885 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131296686/com.example.accountapp:id/save_button>
+05-27 11:10:31.205   442 11697 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+05-27 11:10:31.206   617   996 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+05-27 11:10:31.206 19885 19885 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@9ba17ec
+05-27 11:10:31.210 19885 19885 D AutofillManager: view not autofillable - has multiline input type
+05-27 11:10:31.211 19885 19885 D AutofillManager: view not autofillable - has multiline input type
+05-27 11:10:31.218 19885 19900 D HWUI    : endAllActiveAnimators on 0x7e9e973d37c0 (RippleDrawable) with handle 0x7e9dd73e9610
+05-27 11:10:31.219   617  1772 W InputManager-JNI: Input channel object '3739cff com.example.accountapp/com.example.accountapp.MainActivity (client)' was disposed without first being removed with the input manager!
+05-27 11:10:31.249 19885 19900 D EGL_emulation: app_time_stats: avg=94.77ms min=11.10ms max=1885.96ms count=25
+05-27 11:10:31.287   617   764 I ImeTracker: com.example.accountapp:ad3ff68a: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+05-27 11:10:31.287   617   764 I ImeTracker: com.example.accountapp:ad3ff68a: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-27 11:10:31.291  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+05-27 11:10:31.294  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+05-27 11:10:31.294  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.accountapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-27 11:10:31.296  1410  1410 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+05-27 11:10:31.297  1410  1410 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password-ascii, password_ascii
+05-27 11:10:31.438   442   546 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+05-27 11:10:31.529 19885 19885 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "测试账户"}' assertion on view view.getId() is <2131296778/com.example.accountapp:id/textViewAccountName>
+05-27 11:10:31.532 19885 19885 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "现金"}' assertion on view view.getId() is <2131296779/com.example.accountapp:id/textViewAccountType>
+05-27 11:10:31.535 19885 19885 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "$100.00"}' assertion on view view.getId() is <2131296781/com.example.accountapp:id/textViewBalance>
+05-27 11:10:31.542   617  1003 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10496, packageName = null, attributionTag = null, token = android.os.Binder@34c6ab2, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-27 11:10:31.549  1149  1149 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=1033, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.accountapp.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }
+05-27 11:10:31.549   617   646 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10496, packageName = null, attributionTag = null, token = android.os.Binder@34c6ab2, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-27 11:10:31.550   903  1013 D SplashScreenView: Build android.window.SplashScreenView{b0257fe V.E...... ......ID 0,0-0,0}
+05-27 11:10:31.550   903  1013 D SplashScreenView: Icon: view: null drawable: null size: 0
+05-27 11:10:31.550   903  1013 D SplashScreenView: Branding: view: android.view.View{3430b5f G.ED..... ......I. 0,0-0,0 #1020503 android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+05-27 11:10:31.550 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: PAUSED
+05-27 11:10:31.550 19885 19885 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.accountapp.MainActivity@ee1daf6
+05-27 11:10:31.556   453   453 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+05-27 11:10:31.563   392   392 D Zygote  : Forked child process 19926
+05-27 11:10:31.582   391   391 I netd    : tetherGetStats() -> {[]} <0.41ms>
+05-27 11:10:31.590 19926 19926 I accountapp.test: Late-enabling -Xcheck:jni
+05-27 11:10:31.602 19926 19926 I accountapp.test: Using CollectorTypeCMC GC.
+05-27 11:10:31.603 19926 19926 W accountapp.test: Unexpected CPU variant for x86: x86_64.
+05-27 11:10:31.603 19926 19926 W accountapp.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+05-27 11:10:31.606   471   481 I adbd    : jdwp connection from 19926
+05-27 11:10:31.617 19926 19926 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-27 11:10:31.656 19926 19926 D CompatChangeReporter: Compat change id reported: 242716250; UID 10496; state: ENABLED
+05-27 11:10:31.720 19926 19926 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-27 11:10:31.733 19926 19926 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~LVsKvHZT4ASAsYCbl2Mr5g==/com.example.accountapp.test-RfDbljaoTx-WvxGNe1-UmA==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.accountapp.test
+05-27 11:10:31.738 19926 19926 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-27 11:10:31.742 19926 19926 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~LVsKvHZT4ASAsYCbl2Mr5g==/com.example.accountapp.test-RfDbljaoTx-WvxGNe1-UmA==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.accountapp.test
+05-27 11:10:31.743 19926 19926 W ziparchive: Unable to open '/data/app/~~LVsKvHZT4ASAsYCbl2Mr5g==/com.example.accountapp.test-RfDbljaoTx-WvxGNe1-UmA==/base.dm': No such file or directory
+05-27 11:10:31.744 19926 19926 W ziparchive: Unable to open '/data/app/~~LVsKvHZT4ASAsYCbl2Mr5g==/com.example.accountapp.test-RfDbljaoTx-WvxGNe1-UmA==/base.dm': No such file or directory
+05-27 11:10:31.799   903  1048 D EGL_emulation: app_time_stats: avg=337.76ms min=2.06ms max=3337.58ms count=10
+05-27 11:10:31.808   415   464 I RanchuHwc: logCompositionFallbackIfChanged: layer 2113 CompositionType fallback from 3 to 1
+05-27 11:10:31.849 19926 19926 D nativeloader: Configuring clns-9 for other apk /data/app/~~LVsKvHZT4ASAsYCbl2Mr5g==/com.example.accountapp.test-RfDbljaoTx-WvxGNe1-UmA==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~LVsKvHZT4ASAsYCbl2Mr5g==/com.example.accountapp.test-RfDbljaoTx-WvxGNe1-UmA==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.accountapp.test
+05-27 11:10:31.868 19926 19926 V GraphicsEnvironment: Currently set values for:
+05-27 11:10:31.868 19926 19926 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-27 11:10:31.868 19926 19926 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-27 11:10:31.869 19926 19926 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+05-27 11:10:31.869 19926 19926 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+05-27 11:10:31.937 19926 19926 W HWUI    : Unknown dataspace 0
+05-27 11:10:31.949  1149  1149 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=726, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity }
+05-27 11:10:31.962  1149  1686 D EGL_emulation: app_time_stats: avg=537.64ms min=15.07ms max=3663.07ms count=7
+05-27 11:10:31.965   453   489 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10496 pid=0
+05-27 11:10:31.965   453   489 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10496 => denied (451 us)
+05-27 11:10:31.966   453   489 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10496 pid=0
+05-27 11:10:31.966   453   716 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10496 pid=19926
+05-27 11:10:31.966   453   489 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10496 => denied (1248 us)
+05-27 11:10:31.966   453   716 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10496 => denied (1105 us)
+05-27 11:10:31.967   453   489 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10496 pid=0
+05-27 11:10:31.967   453   716 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10496 pid=19926
+05-27 11:10:31.967   453   489 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10496 => denied (403 us)
+05-27 11:10:31.967   453   716 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10496 => denied (563 us)
+05-27 11:10:31.969 19926 19940 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+05-27 11:10:31.970 19926 19940 I EGL_emulation: Opening libGLESv2_emulation.so
+05-27 11:10:31.975 19926 19940 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-27 11:10:31.976 19926 19940 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-27 11:10:32.390 19885 19885 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-27 11:10:32.915  1149  1149 I Choreographer: Skipped 53 frames!  The application may be doing too much work on its main thread.
+05-27 11:10:32.923  1149  1341 I HWUI    : Davey! duration=926ms; Flags=0, FrameTimelineVsyncId=1238162, IntendedVsync=120609381722640, Vsync=120609381722640, InputEventId=0, HandleInputStart=120609383164100, AnimationStart=120609383181000, PerformTraversalsStart=120609383407200, DrawStart=120609383475600, FrameDeadline=120609415055972, FrameInterval=120609383152000, FrameStartTime=16666666, SyncQueued=120609383509900, SyncStart=120609383553300, IssueDrawCommandsStart=120609383602200, SwapBuffers=120610265094400, FrameCompleted=120610308059600, DequeueBufferDuration=8013000, QueueBufferDuration=286000, GpuCompleted=120610302455500, SwapBuffersCompleted=120610308059600, DisplayPresentTime=0, CommandSubmissionCompleted=120610265094400,
+05-27 11:10:32.927 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: STOPPED
+05-27 11:10:32.927 19885 19885 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.accountapp.MainActivity@ee1daf6
+05-27 11:10:32.930   181   181 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+05-27 11:10:32.930   391   391 I netd    : tetherGetStats() -> {[]} <0.65ms>
+05-27 11:10:32.931 19926 19940 I Gralloc4: mapper 4.x is not supported
+05-27 11:10:32.932 19885 19885 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+05-27 11:10:32.938 19885 19885 D LifecycleMonitor: Lifecycle status change: com.example.accountapp.MainActivity@ee1daf6 in: DESTROYED
+05-27 11:10:32.938 19885 19885 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+05-27 11:10:32.941  1105  1105 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:725647527
+05-27 11:10:32.941 19885 19885 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@800a7cc
+05-27 11:10:32.947   617   707 W InputManager-JNI: Input channel object 'ad000d4 com.example.accountapp/com.example.accountapp.MainActivity (client)' was disposed without first being removed with the input manager!
+05-27 11:10:32.947 19885 19898 I TestRunner: finished: mainActivityTest(com.example.accountapp.MainActivityTest)
