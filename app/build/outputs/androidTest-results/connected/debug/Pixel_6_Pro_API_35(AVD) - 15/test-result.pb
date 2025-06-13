@@ -1,10 +1,10 @@
 
-Â
-\
-AddTransactionTestcom.example.accountappaddTransactionTest2·®ÂÀùø†:Ñ·®Â€˜‘Â"Ü
+Ä
+]
+StatisticsDateRangeTestcom.example.accountapptestStatistics2ı¯ÂÀñ¾°:ôş¯ÂÀê„"İ
 
-logcatandroidÆ
-ÃC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.AddTransactionTest-addTransactionTest.txt"¨
+logcatandroidÇ
+ÄC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.StatisticsDateRangeTest-testStatistics.txt"¨
 
 device-infoandroid
 ŠC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©

@@ -36,6 +36,9 @@ public interface TransactionDao {
     @Query("SELECT SUM(amount) FROM transactions WHERE accountId = :accountId AND type = :type AND date BETWEEN :startDate AND :endDate")
     LiveData<Double> getTotalByAccountAndTypeAndDateRange(long accountId, TransactionEntity.Type type, Date startDate, Date endDate);
 
+    @Query("SELECT * FROM transactions WHERE (:accountId IS NULL OR accountId = :accountId) AND (:type IS NULL OR type = :type) AND date BETWEEN :startDate AND :endDate ORDER BY date DESC")
+    LiveData<List<TransactionEntity>> getTransactionsByAccountTypeDateRange(Long accountId, TransactionEntity.Type type, Date startDate, Date endDate);
+
     @Insert
     void insert(TransactionEntity transaction);
 

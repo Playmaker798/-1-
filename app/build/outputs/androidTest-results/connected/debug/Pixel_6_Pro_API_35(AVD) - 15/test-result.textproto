@@ -1,20 +1,20 @@
-# 2025-06-13T03:32:37.171Z:
+# 2025-06-13T10:37:42.804Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
 test_status: PASSED
 test_result {
   test_case {
-    test_class: "AddTransactionTest"
+    test_class: "StatisticsDateRangeTest"
     test_package: "com.example.accountapp"
-    test_method: "addTransactionTest"
+    test_method: "testStatistics"
     start_time {
-      seconds: 1749785485
-      nanos: 283000000
+      seconds: 1749810846
+      nanos: 907000000
     }
     end_time {
-      seconds: 1749785553
-      nanos: 944000000
+      seconds: 1749811060
+      nanos: 547000000
     }
   }
   test_status: PASSED
@@ -24,7 +24,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.AddTransactionTest-addTransactionTest.txt"
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.StatisticsDateRangeTest-testStatistics.txt"
     }
   }
   output_artifact {

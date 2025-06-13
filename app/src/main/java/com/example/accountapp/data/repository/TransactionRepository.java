@@ -52,6 +52,10 @@ public class TransactionRepository {
         return transactionDao.getTotalByAccountAndTypeAndDateRange(accountId, type, startDate, endDate);
     }
 
+    public LiveData<List<TransactionEntity>> getTransactionsByAccountTypeDateRange(Long accountId, TransactionEntity.Type type, Date startDate, Date endDate) {
+        return transactionDao.getTransactionsByAccountTypeDateRange(accountId, type, startDate, endDate);
+    }
+
     public void insert(TransactionEntity transaction) {
         executorService.execute(() -> transactionDao.insert(transaction));
     }

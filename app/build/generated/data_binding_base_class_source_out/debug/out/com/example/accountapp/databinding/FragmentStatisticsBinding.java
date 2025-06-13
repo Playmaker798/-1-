@@ -46,6 +46,9 @@ public final class FragmentStatisticsBinding implements ViewBinding {
   public final Spinner spinnerAccount;
 
   @NonNull
+  public final Spinner spinnerCategory;
+
+  @NonNull
   public final Spinner spinnerType;
 
   @NonNull
@@ -64,9 +67,9 @@ public final class FragmentStatisticsBinding implements ViewBinding {
       @NonNull ImageButton buttonNextMonth, @NonNull ImageButton buttonPreviousMonth,
       @NonNull ProgressBar progressBarExpense, @NonNull ProgressBar progressBarIncome,
       @NonNull RecyclerView recyclerViewStatistics, @NonNull Spinner spinnerAccount,
-      @NonNull Spinner spinnerType, @NonNull TextView textViewBalance,
-      @NonNull TextView textViewExpense, @NonNull TextView textViewIncome,
-      @NonNull TextView textViewMonthYear) {
+      @NonNull Spinner spinnerCategory, @NonNull Spinner spinnerType,
+      @NonNull TextView textViewBalance, @NonNull TextView textViewExpense,
+      @NonNull TextView textViewIncome, @NonNull TextView textViewMonthYear) {
     this.rootView = rootView;
     this.buttonDateRange = buttonDateRange;
     this.buttonNextMonth = buttonNextMonth;
@@ -75,6 +78,7 @@ public final class FragmentStatisticsBinding implements ViewBinding {
     this.progressBarIncome = progressBarIncome;
     this.recyclerViewStatistics = recyclerViewStatistics;
     this.spinnerAccount = spinnerAccount;
+    this.spinnerCategory = spinnerCategory;
     this.spinnerType = spinnerType;
     this.textViewBalance = textViewBalance;
     this.textViewExpense = textViewExpense;
@@ -151,6 +155,12 @@ public final class FragmentStatisticsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerCategory;
+      Spinner spinnerCategory = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerCategory == null) {
+        break missingId;
+      }
+
       id = R.id.spinnerType;
       Spinner spinnerType = ViewBindings.findChildViewById(rootView, id);
       if (spinnerType == null) {
@@ -183,8 +193,8 @@ public final class FragmentStatisticsBinding implements ViewBinding {
 
       return new FragmentStatisticsBinding((ScrollView) rootView, buttonDateRange, buttonNextMonth,
           buttonPreviousMonth, progressBarExpense, progressBarIncome, recyclerViewStatistics,
-          spinnerAccount, spinnerType, textViewBalance, textViewExpense, textViewIncome,
-          textViewMonthYear);
+          spinnerAccount, spinnerCategory, spinnerType, textViewBalance, textViewExpense,
+          textViewIncome, textViewMonthYear);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

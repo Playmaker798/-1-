@@ -797,6 +797,129 @@ public final class TransactionDao_Impl implements TransactionDao {
     });
   }
 
+  @Override
+  public LiveData<List<TransactionEntity>> getTransactionsByAccountTypeDateRange(
+      final Long accountId, final TransactionEntity.Type type, final Date startDate,
+      final Date endDate) {
+    final String _sql = "SELECT * FROM transactions WHERE (? IS NULL OR accountId = ?) AND (? IS NULL OR type = ?) AND date BETWEEN ? AND ? ORDER BY date DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 6);
+    int _argIndex = 1;
+    if (accountId == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, accountId);
+    }
+    _argIndex = 2;
+    if (accountId == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, accountId);
+    }
+    _argIndex = 3;
+    final String _tmp = Converters.transactionTypeToString(type);
+    if (_tmp == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, _tmp);
+    }
+    _argIndex = 4;
+    final String _tmp_1 = Converters.transactionTypeToString(type);
+    if (_tmp_1 == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, _tmp_1);
+    }
+    _argIndex = 5;
+    final Long _tmp_2 = Converters.dateToTimestamp(startDate);
+    if (_tmp_2 == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp_2);
+    }
+    _argIndex = 6;
+    final Long _tmp_3 = Converters.dateToTimestamp(endDate);
+    if (_tmp_3 == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp_3);
+    }
+    return __db.getInvalidationTracker().createLiveData(new String[] {"transactions"}, false, new Callable<List<TransactionEntity>>() {
+      @Override
+      @Nullable
+      public List<TransactionEntity> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfType = CursorUtil.getColumnIndexOrThrow(_cursor, "type");
+          final int _cursorIndexOfAccountId = CursorUtil.getColumnIndexOrThrow(_cursor, "accountId");
+          final int _cursorIndexOfCategoryId = CursorUtil.getColumnIndexOrThrow(_cursor, "categoryId");
+          final int _cursorIndexOfAmount = CursorUtil.getColumnIndexOrThrow(_cursor, "amount");
+          final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
+          final int _cursorIndexOfNote = CursorUtil.getColumnIndexOrThrow(_cursor, "note");
+          final List<TransactionEntity> _result = new ArrayList<TransactionEntity>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final TransactionEntity _item;
+            _item = new TransactionEntity();
+            final long _tmpId;
+            _tmpId = _cursor.getLong(_cursorIndexOfId);
+            _item.setId(_tmpId);
+            final TransactionEntity.Type _tmpType;
+            final String _tmp_4;
+            if (_cursor.isNull(_cursorIndexOfType)) {
+              _tmp_4 = null;
+            } else {
+              _tmp_4 = _cursor.getString(_cursorIndexOfType);
+            }
+            _tmpType = Converters.fromTransactionType(_tmp_4);
+            _item.setType(_tmpType);
+            final long _tmpAccountId;
+            _tmpAccountId = _cursor.getLong(_cursorIndexOfAccountId);
+            _item.setAccountId(_tmpAccountId);
+            final long _tmpCategoryId;
+            _tmpCategoryId = _cursor.getLong(_cursorIndexOfCategoryId);
+            _item.setCategoryId(_tmpCategoryId);
+            final double _tmpAmount;
+            _tmpAmount = _cursor.getDouble(_cursorIndexOfAmount);
+            _item.setAmount(_tmpAmount);
+            final String _tmpDescription;
+            if (_cursor.isNull(_cursorIndexOfDescription)) {
+              _tmpDescription = null;
+            } else {
+              _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            }
+            _item.setDescription(_tmpDescription);
+            final Date _tmpDate;
+            final Long _tmp_5;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmp_5 = null;
+            } else {
+              _tmp_5 = _cursor.getLong(_cursorIndexOfDate);
+            }
+            _tmpDate = Converters.fromTimestamp(_tmp_5);
+            _item.setDate(_tmpDate);
+            final String _tmpNote;
+            if (_cursor.isNull(_cursorIndexOfNote)) {
+              _tmpNote = null;
+            } else {
+              _tmpNote = _cursor.getString(_cursorIndexOfNote);
+            }
+            _item.setNote(_tmpNote);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
   @NonNull
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();

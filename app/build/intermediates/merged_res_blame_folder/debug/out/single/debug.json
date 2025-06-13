@@ -16,10 +16,6 @@
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_add_transaction.xml.flat",
-        "source": "com.example.accountapp-main-55:/layout/fragment_add_transaction.xml"
-    },
-    {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_add.xml.flat",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_add.xml"
     },
@@ -52,12 +48,16 @@
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\dialog_category.xml"
     },
     {
+        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_fragment_transactions.xml.flat",
+        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\fragment_transactions.xml"
+    },
+    {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_chevron_left.xml.flat",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_chevron_left.xml"
     },
     {
-        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_fragment_transactions.xml.flat",
-        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\fragment_transactions.xml"
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_statistics.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_statistics.xml"
     },
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\menu_bottom_nav_menu.xml.flat",
@@ -72,20 +72,20 @@
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_gift.xml"
     },
     {
-        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_accounts.xml.flat",
-        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_accounts.xml"
+        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_item_dropdown.xml.flat",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\item_dropdown.xml"
     },
     {
-        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_accounts.xml.flat",
+        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_accounts.xml"
+    },
+    {
+        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_shopping.xml.flat",
@@ -124,12 +124,12 @@
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\dialog_budget.xml"
     },
     {
-        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_investment.xml.flat",
-        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_investment.xml"
-    },
-    {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_fragment_add_transaction.xml.flat",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\layout\\fragment_add_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_investment.xml.flat",
+        "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_investment.xml"
     },
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\layout_item_budget.xml.flat",

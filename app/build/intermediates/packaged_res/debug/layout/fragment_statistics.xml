@@ -60,6 +60,15 @@
                 android:prompt="@string/select_account" />
 
             <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:prompt="@string/select_category"
+                android:layout_marginStart="8dp" />
+
+            <Spinner
                 android:id="@+id/spinnerType"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
