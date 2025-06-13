@@ -1,20 +1,20 @@
-# 2025-05-27T11:10:39.327Z:
+# 2025-06-13T03:25:58.573Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
 test_status: PASSED
 test_result {
   test_case {
-    test_class: "MainActivityTest"
+    test_class: "AddTransactionTest"
     test_package: "com.example.accountapp"
-    test_method: "mainActivityTest"
+    test_method: "addTransactionTest"
     start_time {
-      seconds: 1748344232
-      nanos: 312000000
+      seconds: 1749785124
+      nanos: 54000000
     }
     end_time {
-      seconds: 1748344238
-      nanos: 449000000
+      seconds: 1749785156
+      nanos: 504000000
     }
   }
   test_status: PASSED
@@ -24,7 +24,7 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.MainActivityTest-mainActivityTest.txt"
+      path: "C:\\Users\\31609\\AndroidStudioProjects\\-1-\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_6_Pro_API_35(AVD) - 15\\logcat-com.example.accountapp.AddTransactionTest-addTransactionTest.txt"
     }
   }
   output_artifact {

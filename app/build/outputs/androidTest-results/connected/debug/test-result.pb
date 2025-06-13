@@ -1,10 +1,10 @@
 
-º
-X
-MainActivityTestcom.example.accountappmainActivityTest2¨»ÖÁ€üâ”:®»ÖÁÀäŒÖ"Ø
+Á
+[
+AddTransactionTestcom.example.accountappaddTransactionTest2¤´®Â€óß:Ä´®Â€Ü©ğ"Ü
 
-logcatandroidÂ
-¿C:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.MainActivityTest-mainActivityTest.txt"¨
+logcatandroidÆ
+ÃC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\logcat-com.example.accountapp.AddTransactionTest-addTransactionTest.txt"¨
 
 device-infoandroid
 ŠC:\Users\31609\AndroidStudioProjects\-1-\app\build\outputs\androidTest-results\connected\debug\Pixel_6_Pro_API_35(AVD) - 15\device-info.pb"©

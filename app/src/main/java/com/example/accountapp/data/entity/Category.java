@@ -90,4 +90,9 @@ public class Category {
     public int hashCode() {
         return Objects.hash(id, name, icon, color, parentId, level);
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 } 

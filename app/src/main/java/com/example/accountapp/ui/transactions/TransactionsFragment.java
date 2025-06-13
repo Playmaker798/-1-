@@ -54,6 +54,9 @@ public class TransactionsFragment extends Fragment {
             adapter.submitList(transactions);
             binding.textViewEmpty.setVisibility(transactions.isEmpty() ? View.VISIBLE : View.GONE);
         });
+        viewModel.getAccounts().observe(getViewLifecycleOwner(), accounts -> {
+            adapter.setAccountList(accounts);
+        });
     }
 
     @Override

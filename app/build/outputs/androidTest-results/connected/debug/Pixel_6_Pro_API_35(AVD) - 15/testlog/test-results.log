@@ -1,21 +1,21 @@
-INSTRUMENTATION_STATUS: class=com.example.accountapp.MainActivityTest
+INSTRUMENTATION_STATUS: class=com.example.accountapp.AddTransactionTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.accountapp.MainActivityTest:
-INSTRUMENTATION_STATUS: test=mainActivityTest
+com.example.accountapp.AddTransactionTest:
+INSTRUMENTATION_STATUS: test=addTransactionTest
 INSTRUMENTATION_STATUS_CODE: 1
-INSTRUMENTATION_STATUS: class=com.example.accountapp.MainActivityTest
+INSTRUMENTATION_STATUS: class=com.example.accountapp.AddTransactionTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=.
-INSTRUMENTATION_STATUS: test=mainActivityTest
+INSTRUMENTATION_STATUS: test=addTransactionTest
 INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 6.157
+Time: 32.531
 
 OK (1 test)
 

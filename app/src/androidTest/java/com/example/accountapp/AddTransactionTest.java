@@ -29,6 +29,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static androidx.test.espresso.matcher.RootMatchers.isPlatformPopup;
+import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
@@ -59,43 +60,30 @@ public class AddTransactionTest {
             .perform(androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition(0, click()));
         onView(withId(R.id.buttonSave)).perform(click());
         waitForViewToBeDisplayed(withText("餐饮"));
-
-        // 3. 切换到账目页面，执行账目添加测试
         onView(withId(R.id.navigation_transactions)).perform(click());
         onView(withId(R.id.fabAddTransaction)).perform(click());
-
-        // 4. 必填项校验：不输入金额直接保存
         onView(withId(R.id.buttonSave)).perform(click());
-        // 这里假设金额输入框有错误提示，实际项目可根据实现调整
-        // onView(withId(R.id.editTextAmount)).check(matches(hasTextInputLayoutErrorText("请输入金额")));
-
-        // 5. 输入金额但不选账户
         onView(withId(R.id.editTextAmount)).perform(replaceText("88.88"));
         onView(withId(R.id.buttonSave)).perform(click());
-        // onView(withId(R.id.spinnerAccount)).check(matches(hasTextInputLayoutErrorText("请选择账户")));
-
-        // 6. 输入金额和账户但不选分类
         onView(withId(R.id.spinnerAccount)).perform(click());
         onView(withText("现金")).inRoot(isPlatformPopup()).perform(click());
         onView(withId(R.id.buttonSave)).perform(click());
-        // onView(withId(R.id.spinnerCategory)).check(matches(hasTextInputLayoutErrorText("请选择分类")));
-
-        // 7. 输入全部信息
+        onView(withId(R.id.editTextDescription)).perform(replaceText("测试账目"), closeSoftKeyboard());
+        onView(withId(R.id.spinnerType)).perform(click());
+        onView(withText("收入")).inRoot(isPlatformPopup()).perform(click());
         onView(withId(R.id.spinnerCategory)).perform(click());
         onView(withText("餐饮")).inRoot(isPlatformPopup()).perform(click());
-        // 日期可选填，若需指定可加如下
-        // onView(withId(R.id.buttonDate)).perform(click());
-        // onView(withText("2024-06-01")).perform(click());
         onView(withId(R.id.buttonSave)).perform(click());
+        waitForViewToBeDisplayed(withId(R.id.recyclerViewTransactions));
+        onView(withId(R.id.recyclerViewTransactions))
+            .perform(androidx.test.espresso.contrib.RecyclerViewActions.scrollToPosition(0));
+        onView(allOf(withId(R.id.textViewAmount), withText("88.88")))
+            .check(matches(isDisplayed()));
+        onView(allOf(withId(R.id.textViewAccount), withText("现金")))
+            .check(matches(isDisplayed()));
 
-        // 8. 验证账目列表展示
-        onView(allOf(withId(R.id.textViewAmount), withText("88.88"))).check(matches(isDisplayed()));
-        onView(allOf(withId(R.id.textViewAccount), withText("现金"))).check(matches(isDisplayed()));
-        // 分类在item_transaction.xml没有单独id，若有可加断言
-        // onView(allOf(withId(R.id.textViewCategory), withText("餐饮"))).check(matches(isDisplayed()));
     }
 
-    // 可选：断言 TextInputLayout error 的自定义 Matcher
     public static Matcher<View> hasTextInputLayoutErrorText(final String expectedErrorText) {
         return new TypeSafeMatcher<View>() {
             @Override
@@ -115,6 +103,5 @@ public class AddTransactionTest {
     }
 
     private void waitForViewToBeDisplayed(Matcher<View> matcher) {
-        // Implementation of waitForViewToBeDisplayed method
     }
 } 

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.accountapp.MainActivityTest" tests="1" failures="0" errors="0" skipped="0" time="6.973" timestamp="2025-05-27T11:10:39" hostname="localhost">
+<testsuite name="com.example.accountapp.AddTransactionTest" tests="1" failures="0" errors="0" skipped="0" time="34.431" timestamp="2025-06-13T03:25:58" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_6_Pro_API_35(AVD) - 15" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="mainActivityTest" classname="com.example.accountapp.MainActivityTest" time="6.132" />
+  <testcase name="addTransactionTest" classname="com.example.accountapp.AddTransactionTest" time="32.424" />
 </testsuite>
