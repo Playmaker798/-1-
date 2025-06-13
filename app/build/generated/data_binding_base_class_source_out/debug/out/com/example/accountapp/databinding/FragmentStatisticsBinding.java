@@ -4,12 +4,15 @@ package com.example.accountapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.accountapp.R;
@@ -20,6 +23,9 @@ import java.lang.String;
 public final class FragmentStatisticsBinding implements ViewBinding {
   @NonNull
   private final ScrollView rootView;
+
+  @NonNull
+  public final Button buttonDateRange;
 
   @NonNull
   public final ImageButton buttonNextMonth;
@@ -34,6 +40,15 @@ public final class FragmentStatisticsBinding implements ViewBinding {
   public final ProgressBar progressBarIncome;
 
   @NonNull
+  public final RecyclerView recyclerViewStatistics;
+
+  @NonNull
+  public final Spinner spinnerAccount;
+
+  @NonNull
+  public final Spinner spinnerType;
+
+  @NonNull
   public final TextView textViewBalance;
 
   @NonNull
@@ -45,16 +60,22 @@ public final class FragmentStatisticsBinding implements ViewBinding {
   @NonNull
   public final TextView textViewMonthYear;
 
-  private FragmentStatisticsBinding(@NonNull ScrollView rootView,
+  private FragmentStatisticsBinding(@NonNull ScrollView rootView, @NonNull Button buttonDateRange,
       @NonNull ImageButton buttonNextMonth, @NonNull ImageButton buttonPreviousMonth,
       @NonNull ProgressBar progressBarExpense, @NonNull ProgressBar progressBarIncome,
-      @NonNull TextView textViewBalance, @NonNull TextView textViewExpense,
-      @NonNull TextView textViewIncome, @NonNull TextView textViewMonthYear) {
+      @NonNull RecyclerView recyclerViewStatistics, @NonNull Spinner spinnerAccount,
+      @NonNull Spinner spinnerType, @NonNull TextView textViewBalance,
+      @NonNull TextView textViewExpense, @NonNull TextView textViewIncome,
+      @NonNull TextView textViewMonthYear) {
     this.rootView = rootView;
+    this.buttonDateRange = buttonDateRange;
     this.buttonNextMonth = buttonNextMonth;
     this.buttonPreviousMonth = buttonPreviousMonth;
     this.progressBarExpense = progressBarExpense;
     this.progressBarIncome = progressBarIncome;
+    this.recyclerViewStatistics = recyclerViewStatistics;
+    this.spinnerAccount = spinnerAccount;
+    this.spinnerType = spinnerType;
     this.textViewBalance = textViewBalance;
     this.textViewExpense = textViewExpense;
     this.textViewIncome = textViewIncome;
@@ -88,6 +109,12 @@ public final class FragmentStatisticsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonDateRange;
+      Button buttonDateRange = ViewBindings.findChildViewById(rootView, id);
+      if (buttonDateRange == null) {
+        break missingId;
+      }
+
       id = R.id.buttonNextMonth;
       ImageButton buttonNextMonth = ViewBindings.findChildViewById(rootView, id);
       if (buttonNextMonth == null) {
@@ -109,6 +136,24 @@ public final class FragmentStatisticsBinding implements ViewBinding {
       id = R.id.progressBarIncome;
       ProgressBar progressBarIncome = ViewBindings.findChildViewById(rootView, id);
       if (progressBarIncome == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewStatistics;
+      RecyclerView recyclerViewStatistics = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewStatistics == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerAccount;
+      Spinner spinnerAccount = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerAccount == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerType;
+      Spinner spinnerType = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerType == null) {
         break missingId;
       }
 
@@ -136,9 +181,10 @@ public final class FragmentStatisticsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentStatisticsBinding((ScrollView) rootView, buttonNextMonth,
-          buttonPreviousMonth, progressBarExpense, progressBarIncome, textViewBalance,
-          textViewExpense, textViewIncome, textViewMonthYear);
+      return new FragmentStatisticsBinding((ScrollView) rootView, buttonDateRange, buttonNextMonth,
+          buttonPreviousMonth, progressBarExpense, progressBarIncome, recyclerViewStatistics,
+          spinnerAccount, spinnerType, textViewBalance, textViewExpense, textViewIncome,
+          textViewMonthYear);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

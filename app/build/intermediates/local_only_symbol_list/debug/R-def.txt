@@ -56,6 +56,7 @@ id account_type_spinner
 id appBarLayout
 id buttonCancel
 id buttonDate
+id buttonDateRange
 id buttonNextMonth
 id buttonPreviousMonth
 id buttonSave
@@ -100,6 +101,7 @@ id recyclerViewAccounts
 id recyclerViewBudgets
 id recyclerViewCategories
 id recyclerViewIcons
+id recyclerViewStatistics
 id recyclerViewTransactions
 id save_button
 id spinnerAccount
@@ -253,6 +255,7 @@ string select_currency
 string select_custom
 string select_custom_options
 string select_date
+string select_date_range
 string select_default
 string select_default_options
 string select_export

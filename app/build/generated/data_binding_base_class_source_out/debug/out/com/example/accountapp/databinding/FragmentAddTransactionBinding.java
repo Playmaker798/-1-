@@ -34,6 +34,9 @@ public final class FragmentAddTransactionBinding implements ViewBinding {
   public final TextInputEditText editTextAmount;
 
   @NonNull
+  public final TextInputEditText editTextDate;
+
+  @NonNull
   public final TextInputEditText editTextDescription;
 
   @NonNull
@@ -42,19 +45,25 @@ public final class FragmentAddTransactionBinding implements ViewBinding {
   @NonNull
   public final Spinner spinnerCategory;
 
+  @NonNull
+  public final Spinner spinnerType;
+
   private FragmentAddTransactionBinding(@NonNull LinearLayout rootView,
       @NonNull MaterialButton buttonCancel, @NonNull MaterialButton buttonDate,
       @NonNull MaterialButton buttonSave, @NonNull TextInputEditText editTextAmount,
-      @NonNull TextInputEditText editTextDescription, @NonNull Spinner spinnerAccount,
-      @NonNull Spinner spinnerCategory) {
+      @NonNull TextInputEditText editTextDate, @NonNull TextInputEditText editTextDescription,
+      @NonNull Spinner spinnerAccount, @NonNull Spinner spinnerCategory,
+      @NonNull Spinner spinnerType) {
     this.rootView = rootView;
     this.buttonCancel = buttonCancel;
     this.buttonDate = buttonDate;
     this.buttonSave = buttonSave;
     this.editTextAmount = editTextAmount;
+    this.editTextDate = editTextDate;
     this.editTextDescription = editTextDescription;
     this.spinnerAccount = spinnerAccount;
     this.spinnerCategory = spinnerCategory;
+    this.spinnerType = spinnerType;
   }
 
   @Override
@@ -108,6 +117,12 @@ public final class FragmentAddTransactionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.editTextDate;
+      TextInputEditText editTextDate = ViewBindings.findChildViewById(rootView, id);
+      if (editTextDate == null) {
+        break missingId;
+      }
+
       id = R.id.editTextDescription;
       TextInputEditText editTextDescription = ViewBindings.findChildViewById(rootView, id);
       if (editTextDescription == null) {
@@ -126,8 +141,15 @@ public final class FragmentAddTransactionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerType;
+      Spinner spinnerType = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerType == null) {
+        break missingId;
+      }
+
       return new FragmentAddTransactionBinding((LinearLayout) rootView, buttonCancel, buttonDate,
-          buttonSave, editTextAmount, editTextDescription, spinnerAccount, spinnerCategory);
+          buttonSave, editTextAmount, editTextDate, editTextDescription, spinnerAccount,
+          spinnerCategory, spinnerType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

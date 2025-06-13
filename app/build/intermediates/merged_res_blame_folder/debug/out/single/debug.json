@@ -16,6 +16,10 @@
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\navigation\\nav_graph.xml"
     },
     {
+        "merged": "com.example.accountapp-merged_res-53:/layout_fragment_add_transaction.xml.flat",
+        "source": "com.example.accountapp-main-55:/layout/fragment_add_transaction.xml"
+    },
+    {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_add.xml.flat",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_add.xml"
     },
@@ -162,10 +166,6 @@
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_education.xml.flat",
         "source": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-main-55:\\drawable\\ic_education.xml"
-    },
-    {
-        "merged": "com.example.accountapp-merged_res-53:/layout_dialog_account.xml.flat",
-        "source": "com.example.accountapp-main-55:/layout/dialog_account.xml"
     },
     {
         "merged": "C:\\Users\\31609\\.gradle\\daemon\\8.2\\com.example.accountapp-merged_res-53:\\drawable_ic_account_balance.xml.flat",

@@ -178,4 +178,5 @@
     <string name="error_category_type_required">Please select category type</string>
     <string name="error_invalid_category_type">Invalid category type</string>
     <string name="error_icon_required">Please select icon</string>
+    <string name="select_date_range">选择日期区间</string>
 </resources> 
